@@ -1,0 +1,12 @@
+{
+  "name": "tls",
+  "git_url": "Mosaad-M/tls",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.0.0.tar.gz",
+      "sha256": "c0ced20e5a233d68f60460845e8dbae63926373273e21c58b5372b03c95c24ff",
+      "mojo_requires": ">=0.26.1"
+    }
+  ]
+}

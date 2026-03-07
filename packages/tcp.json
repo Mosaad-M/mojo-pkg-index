@@ -1,0 +1,12 @@
+{
+  "name": "tcp",
+  "git_url": "Mosaad-M/tcp",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v1.0.0.tar.gz",
+      "sha256": "5102a4f62ca5fc9198288acb390f38294de1e51d3aacd8f7b3b0d504e8009dc0",
+      "mojo_requires": ">=0.26.1"
+    }
+  ]
+}

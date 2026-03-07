@@ -1,0 +1,12 @@
+{
+  "name": "url",
+  "git_url": "Mosaad-M/url",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.0.0.tar.gz",
+      "sha256": "46d634b7c077a05db221b17dd771b3d6a7aad282207a926ac76d46cc6305f8fc",
+      "mojo_requires": ">=0.26.1"
+    }
+  ]
+}
