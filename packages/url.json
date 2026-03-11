@@ -1,12 +1,17 @@
 {
   "name": "url",
   "git_url": "Mosaad-M/url",
+  "description": "Pure-Mojo URL parser (RFC 3986)",
+  "license": "MIT",
+  "homepage": "https://github.com/Mosaad-M/url",
   "versions": [
     {
       "version": "1.0.0",
+      "published_at": "2026-03-07",
       "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.0.0.tar.gz",
       "sha256": "46d634b7c077a05db221b17dd771b3d6a7aad282207a926ac76d46cc6305f8fc",
-      "mojo_requires": ">=0.26.1"
+      "mojo_requires": ">=0.26.1",
+      "deps": []
     }
   ]
 }
