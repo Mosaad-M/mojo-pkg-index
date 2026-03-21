@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11",
+  "generated_at": "2026-03-21",
   "packages": [
     {
       "name": "json",
@@ -83,6 +83,40 @@
           "sha256": "1b65eb9ac0b57abaa90178b54a3c63ed07db221422cb1e6a75815c08d227d324",
           "mojo_requires": ">=0.26.1",
           "deps": ["tls", "tcp", "url", "json"]
+        }
+      ]
+    },
+    {
+      "name": "websocket",
+      "git_url": "Mosaad-M/websocket",
+      "description": "Pure-Mojo WebSocket client (RFC 6455) with TLS support",
+      "license": "MIT",
+      "homepage": "https://github.com/Mosaad-M/websocket",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "published_at": "2026-03-21",
+          "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.0.tar.gz",
+          "sha256": "98d437e49aff1415b6930d18dec26a57f76fcbf586f15f2f5f38892e050c4fea",
+          "mojo_requires": ">=0.26.1",
+          "deps": ["tls", "tcp", "url"]
+        }
+      ]
+    },
+    {
+      "name": "pg",
+      "git_url": "Mosaad-M/pg",
+      "description": "Pure-Mojo PostgreSQL client (requires system libpq)",
+      "license": "MIT",
+      "homepage": "https://github.com/Mosaad-M/pg",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "published_at": "2026-03-21",
+          "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.0.0.tar.gz",
+          "sha256": "751dbdaf71c96a48b01f704dd98c9f24f029221f55c8ba2fa964e544c5cd775d",
+          "mojo_requires": ">=0.26.1",
+          "deps": []
         }
       ]
     }

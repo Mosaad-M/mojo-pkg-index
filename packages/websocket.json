@@ -1,0 +1,17 @@
+{
+  "name": "websocket",
+  "git_url": "Mosaad-M/websocket",
+  "description": "Pure-Mojo WebSocket client (RFC 6455) with TLS support",
+  "license": "MIT",
+  "homepage": "https://github.com/Mosaad-M/websocket",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "published_at": "2026-03-21",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.0.tar.gz",
+      "sha256": "98d437e49aff1415b6930d18dec26a57f76fcbf586f15f2f5f38892e050c4fea",
+      "mojo_requires": ">=0.26.1",
+      "deps": ["tls", "tcp", "url"]
+    }
+  ]
+}
