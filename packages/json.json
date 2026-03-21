@@ -10,7 +10,7 @@
       "published_at": "2026-03-07",
       "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v1.0.0.tar.gz",
       "sha256": "0f55f19772c5a7649f85146053400e0d08321220115e2dc93d76b82b372f11df",
-      "mojo_requires": ">=0.26.1",
+      "mojo_requires": ">=0.26.2",
       "deps": []
     }
   ]
