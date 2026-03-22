@@ -12,6 +12,14 @@
       "sha256": "5102a4f62ca5fc9198288acb390f38294de1e51d3aacd8f7b3b0d504e8009dc0",
       "mojo_requires": ">=0.26.2",
       "deps": []
+    },
+    {
+      "version": "1.0.1",
+      "published_at": "2026-03-22",
+      "tarball_url": "https://github.com/Mosaad-M/tcp/archive/v1.0.1.tar.gz",
+      "sha256": "ad007750a060aeabba1d7094b957eadd47fe75b17247849c75df17576b67221d",
+      "mojo_requires": ">=0.26.2",
+      "deps": []
     }
   ]
 }

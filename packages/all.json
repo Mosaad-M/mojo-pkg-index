@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21",
+  "generated_at": "2026-03-22",
   "packages": [
     {
       "name": "json",
@@ -13,6 +13,14 @@
           "published_at": "2026-03-07",
           "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v1.0.0.tar.gz",
           "sha256": "0f55f19772c5a7649f85146053400e0d08321220115e2dc93d76b82b372f11df",
+          "mojo_requires": ">=0.26.2",
+          "deps": []
+        },
+        {
+          "version": "1.0.1",
+          "published_at": "2026-03-22",
+          "tarball_url": "https://github.com/Mosaad-M/json/archive/v1.0.1.tar.gz",
+          "sha256": "6a226453863f15ecf969b051038e30fe3f784fe06ab19e97ac1a3c9b76ba1c66",
           "mojo_requires": ">=0.26.2",
           "deps": []
         }
@@ -32,6 +40,14 @@
           "sha256": "46d634b7c077a05db221b17dd771b3d6a7aad282207a926ac76d46cc6305f8fc",
           "mojo_requires": ">=0.26.2",
           "deps": []
+        },
+        {
+          "version": "1.0.1",
+          "published_at": "2026-03-22",
+          "tarball_url": "https://github.com/Mosaad-M/url/archive/v1.0.1.tar.gz",
+          "sha256": "4ac45eea29f94e6ba5a9dd1387d97e66a89cdc5cb15dda7dcebe8c7a8ddaa025",
+          "mojo_requires": ">=0.26.2",
+          "deps": []
         }
       ]
     },
@@ -49,6 +65,14 @@
           "sha256": "5102a4f62ca5fc9198288acb390f38294de1e51d3aacd8f7b3b0d504e8009dc0",
           "mojo_requires": ">=0.26.2",
           "deps": []
+        },
+        {
+          "version": "1.0.1",
+          "published_at": "2026-03-22",
+          "tarball_url": "https://github.com/Mosaad-M/tcp/archive/v1.0.1.tar.gz",
+          "sha256": "ad007750a060aeabba1d7094b957eadd47fe75b17247849c75df17576b67221d",
+          "mojo_requires": ">=0.26.2",
+          "deps": []
         }
       ]
     },
@@ -64,6 +88,14 @@
           "published_at": "2026-03-07",
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.0.0.tar.gz",
           "sha256": "c0ced20e5a233d68f60460845e8dbae63926373273e21c58b5372b03c95c24ff",
+          "mojo_requires": ">=0.26.2",
+          "deps": []
+        },
+        {
+          "version": "1.0.1",
+          "published_at": "2026-03-22",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.1.tar.gz",
+          "sha256": "06f77ed963568cf353f98e9624ada6c7c89712d831ef20cf49e5bc09b8f61985",
           "mojo_requires": ">=0.26.2",
           "deps": []
         }
