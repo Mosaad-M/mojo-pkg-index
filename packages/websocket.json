@@ -12,6 +12,14 @@
       "sha256": "98d437e49aff1415b6930d18dec26a57f76fcbf586f15f2f5f38892e050c4fea",
       "mojo_requires": ">=0.26.2",
       "deps": ["tls", "tcp", "url"]
+    },
+    {
+      "version": "1.0.1",
+      "published_at": "2026-03-22",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.1.tar.gz",
+      "sha256": "40b63decda4cc3bde70735f26cdd9353d5496b8947958b0d8f6d65ef53100420",
+      "mojo_requires": ">=0.26.2",
+      "deps": ["tls", "tcp", "url"]
     }
   ]
 }
