@@ -20,6 +20,14 @@
       "sha256": "06f77ed963568cf353f98e9624ada6c7c89712d831ef20cf49e5bc09b8f61985",
       "mojo_requires": ">=0.26.2",
       "deps": []
+    },
+    {
+      "version": "1.0.2",
+      "published_at": "2026-03-22",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.2.tar.gz",
+      "sha256": "bb06949c8799965f292b0d0ef4ea49750e1043db76cd92cedbdcdebf0601c09b",
+      "mojo_requires": ">=0.26.2",
+      "deps": []
     }
   ]
 }

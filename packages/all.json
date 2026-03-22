@@ -1,156 +1,186 @@
-{
-  "generated_at": "2026-03-22",
-  "packages": [
-    {
-      "name": "json",
-      "git_url": "Mosaad-M/json",
-      "description": "Pure-Mojo JSON parser and serializer",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/json",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-07",
-          "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "0f55f19772c5a7649f85146053400e0d08321220115e2dc93d76b82b372f11df",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        },
-        {
-          "version": "1.0.1",
-          "published_at": "2026-03-22",
-          "tarball_url": "https://github.com/Mosaad-M/json/archive/v1.0.1.tar.gz",
-          "sha256": "6a226453863f15ecf969b051038e30fe3f784fe06ab19e97ac1a3c9b76ba1c66",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        }
-      ]
-    },
-    {
-      "name": "url",
-      "git_url": "Mosaad-M/url",
-      "description": "Pure-Mojo URL parser (RFC 3986)",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/url",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-07",
-          "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "46d634b7c077a05db221b17dd771b3d6a7aad282207a926ac76d46cc6305f8fc",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        },
-        {
-          "version": "1.0.1",
-          "published_at": "2026-03-22",
-          "tarball_url": "https://github.com/Mosaad-M/url/archive/v1.0.1.tar.gz",
-          "sha256": "4ac45eea29f94e6ba5a9dd1387d97e66a89cdc5cb15dda7dcebe8c7a8ddaa025",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        }
-      ]
-    },
-    {
-      "name": "tcp",
-      "git_url": "Mosaad-M/tcp",
-      "description": "Pure-Mojo TCP socket layer",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/tcp",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-07",
-          "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "5102a4f62ca5fc9198288acb390f38294de1e51d3aacd8f7b3b0d504e8009dc0",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        },
-        {
-          "version": "1.0.1",
-          "published_at": "2026-03-22",
-          "tarball_url": "https://github.com/Mosaad-M/tcp/archive/v1.0.1.tar.gz",
-          "sha256": "ad007750a060aeabba1d7094b957eadd47fe75b17247849c75df17576b67221d",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        }
-      ]
-    },
-    {
-      "name": "tls",
-      "git_url": "Mosaad-M/tls",
-      "description": "Pure-Mojo TLS 1.3 + 1.2 client",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/tls",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-07",
-          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "c0ced20e5a233d68f60460845e8dbae63926373273e21c58b5372b03c95c24ff",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        },
-        {
-          "version": "1.0.1",
-          "published_at": "2026-03-22",
-          "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.1.tar.gz",
-          "sha256": "06f77ed963568cf353f98e9624ada6c7c89712d831ef20cf49e5bc09b8f61985",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        }
-      ]
-    },
-    {
-      "name": "requests",
-      "git_url": "Mosaad-M/requests",
-      "description": "Pure-Mojo HTTP/HTTPS client",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/requests",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-07",
-          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "1b65eb9ac0b57abaa90178b54a3c63ed07db221422cb1e6a75815c08d227d324",
-          "mojo_requires": ">=0.26.2",
-          "deps": ["tls", "tcp", "url", "json"]
-        }
-      ]
-    },
-    {
-      "name": "websocket",
-      "git_url": "Mosaad-M/websocket",
-      "description": "Pure-Mojo WebSocket client (RFC 6455) with TLS support",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/websocket",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-21",
-          "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "98d437e49aff1415b6930d18dec26a57f76fcbf586f15f2f5f38892e050c4fea",
-          "mojo_requires": ">=0.26.2",
-          "deps": ["tls", "tcp", "url"]
-        }
-      ]
-    },
-    {
-      "name": "pg",
-      "git_url": "Mosaad-M/pg",
-      "description": "Pure-Mojo PostgreSQL client (requires system libpq)",
-      "license": "MIT",
-      "homepage": "https://github.com/Mosaad-M/pg",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "published_at": "2026-03-21",
-          "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.0.0.tar.gz",
-          "sha256": "751dbdaf71c96a48b01f704dd98c9f24f029221f55c8ba2fa964e544c5cd775d",
-          "mojo_requires": ">=0.26.2",
-          "deps": []
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "json",
+    "git_url": "Mosaad-M/json",
+    "description": "Pure-Mojo JSON parser and serializer",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/json",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-07",
+        "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "0f55f19772c5a7649f85146053400e0d08321220115e2dc93d76b82b372f11df",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.1",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/json/archive/v1.0.1.tar.gz",
+        "sha256": "6a226453863f15ecf969b051038e30fe3f784fe06ab19e97ac1a3c9b76ba1c66",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.2",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/json/archive/v1.0.2.tar.gz",
+        "sha256": "8036355e6d41266a5011967ec7e844c0ca932cfa53dac91c0f24ae55202aebce",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      }
+    ]
+  },
+  {
+    "name": "pg",
+    "git_url": "Mosaad-M/pg",
+    "description": "Pure-Mojo PostgreSQL client (requires system libpq)",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/pg",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-21",
+        "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "751dbdaf71c96a48b01f704dd98c9f24f029221f55c8ba2fa964e544c5cd775d",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      }
+    ]
+  },
+  {
+    "name": "requests",
+    "git_url": "Mosaad-M/requests",
+    "description": "Pure-Mojo HTTP/HTTPS client",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/requests",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-07",
+        "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "1b65eb9ac0b57abaa90178b54a3c63ed07db221422cb1e6a75815c08d227d324",
+        "mojo_requires": ">=0.26.2",
+        "deps": [
+          "tls",
+          "tcp",
+          "url",
+          "json"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "tcp",
+    "git_url": "Mosaad-M/tcp",
+    "description": "Pure-Mojo TCP socket layer",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/tcp",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-07",
+        "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "5102a4f62ca5fc9198288acb390f38294de1e51d3aacd8f7b3b0d504e8009dc0",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.1",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/tcp/archive/v1.0.1.tar.gz",
+        "sha256": "ad007750a060aeabba1d7094b957eadd47fe75b17247849c75df17576b67221d",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.2",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/tcp/archive/v1.0.2.tar.gz",
+        "sha256": "9b92186adf87684c06eae448bbf9ba7ca4478762688e490a3b2c7616b1bb19cf",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      }
+    ]
+  },
+  {
+    "name": "tls",
+    "git_url": "Mosaad-M/tls",
+    "description": "Pure-Mojo TLS 1.3 + 1.2 client",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/tls",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-07",
+        "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "c0ced20e5a233d68f60460845e8dbae63926373273e21c58b5372b03c95c24ff",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.1",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.1.tar.gz",
+        "sha256": "06f77ed963568cf353f98e9624ada6c7c89712d831ef20cf49e5bc09b8f61985",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.2",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.2.tar.gz",
+        "sha256": "bb06949c8799965f292b0d0ef4ea49750e1043db76cd92cedbdcdebf0601c09b",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      }
+    ]
+  },
+  {
+    "name": "url",
+    "git_url": "Mosaad-M/url",
+    "description": "Pure-Mojo URL parser (RFC 3986)",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/url",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-07",
+        "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "46d634b7c077a05db221b17dd771b3d6a7aad282207a926ac76d46cc6305f8fc",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      },
+      {
+        "version": "1.0.1",
+        "published_at": "2026-03-22",
+        "tarball_url": "https://github.com/Mosaad-M/url/archive/v1.0.1.tar.gz",
+        "sha256": "4ac45eea29f94e6ba5a9dd1387d97e66a89cdc5cb15dda7dcebe8c7a8ddaa025",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
+      }
+    ]
+  },
+  {
+    "name": "websocket",
+    "git_url": "Mosaad-M/websocket",
+    "description": "Pure-Mojo WebSocket client (RFC 6455) with TLS support",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/websocket",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-03-21",
+        "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "98d437e49aff1415b6930d18dec26a57f76fcbf586f15f2f5f38892e050c4fea",
+        "mojo_requires": ">=0.26.2",
+        "deps": [
+          "tls",
+          "tcp",
+          "url"
+        ]
+      }
+    ]
+  }
+]
