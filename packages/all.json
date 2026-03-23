@@ -122,6 +122,14 @@
         "sha256": "9b92186adf87684c06eae448bbf9ba7ca4478762688e490a3b2c7616b1bb19cf",
         "mojo_requires": ">=0.26.2",
         "deps": []
+      },
+      {
+        "version": "1.0.3",
+        "published_at": "2026-03-23",
+        "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v1.0.3.tar.gz",
+        "sha256": "89e602565839c1c8a1cb00ed4713c78aaa943836d977cdff616f658e8377a877",
+        "mojo_requires": ">=0.26.2",
+        "deps": []
       }
     ]
   },
@@ -207,6 +215,18 @@
         "published_at": "2026-03-22",
         "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.1.tar.gz",
         "sha256": "40b63decda4cc3bde70735f26cdd9353d5496b8947958b0d8f6d65ef53100420",
+        "mojo_requires": ">=0.26.2",
+        "deps": [
+          "tls",
+          "tcp",
+          "url"
+        ]
+      },
+      {
+        "version": "1.0.2",
+        "published_at": "2026-03-23",
+        "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.0.2.tar.gz",
+        "sha256": "847e217105f30a76e19624fcc6d722be36b9448e6ef8490498ffef1b50e5c944",
         "mojo_requires": ">=0.26.2",
         "deps": [
           "tls",
