@@ -1,7 +1,7 @@
 {
   "name": "pg",
   "git_url": "Mosaad-M/pg",
-  "description": "Pure-Mojo PostgreSQL client (requires system libpq)",
+  "description": "Pure-Mojo PostgreSQL client (wire protocol v3, no libpq)",
   "license": "MIT",
   "homepage": "https://github.com/Mosaad-M/pg",
   "versions": [
@@ -20,6 +20,14 @@
       "sha256": "09bdcdfa5045da3f61903431f0d71bba0b47f97bd9e6f6ca021c26bc73fd4cf6",
       "mojo_requires": ">=0.26.2",
       "deps": []
+    },
+    {
+      "version": "1.1.0",
+      "published_at": "2026-03-23",
+      "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.1.0.tar.gz",
+      "sha256": "cf42cce65ba825639970b6a37e52b27affacd53bc2bb022adee31eda1e184dc9",
+      "mojo_requires": ">=0.26.2",
+      "deps": ["tcp"]
     }
   ]
 }
