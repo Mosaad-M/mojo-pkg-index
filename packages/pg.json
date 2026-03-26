@@ -52,6 +52,15 @@
       "sha256": "1d0e099b08d7c65a0c38b4ee9d124ccfbf66fc207a251b701170f3005cd3811f",
       "mojo_requires": ">=0.26.2",
       "deps": ["tcp", "tls"]
+    },
+    {
+      "version": "1.4.0",
+      "published_at": "2026-03-26",
+      "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.4.0.tar.gz",
+      "sha256": "010c9a6296889f5272913c2588ccb2a6c9f38fde111bd0b62c4babf305172cf6",
+      "mojo_requires": ">=0.26.2",
+      "deps": ["tcp", "tls"],
+      "changelog": "exec_pipeline(): send N queries in one round-trip; PgResult.error field; Copyable PgResult"
     }
   ]
 }

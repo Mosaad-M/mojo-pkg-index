@@ -28,6 +28,24 @@
       "sha256": "bb06949c8799965f292b0d0ef4ea49750e1043db76cd92cedbdcdebf0601c09b",
       "mojo_requires": ">=0.26.2",
       "deps": []
+    },
+    {
+      "version": "1.1.0",
+      "published_at": "2026-03-26",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.1.0.tar.gz",
+      "sha256": "a47062d5f18d3a70603d3bb6aeaad4772990c2d9e808a767a3962fb377d826b7",
+      "mojo_requires": ">=0.26.2",
+      "deps": [],
+      "changelog": "TLS 1.3 PSK session tickets: tls13_psk_from_ticket, tls13_early_secret_from_psk, tls13_binder_key, tls13_psk_binder; NewSessionTicket parser; p256_ecdsa_sign with low-s normalization"
+    },
+    {
+      "version": "1.2.0",
+      "published_at": "2026-03-26",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.2.0.tar.gz",
+      "sha256": "402f0f067c5b11908e0a5cf0a1c41966d8ee2241b60d1af42b81ea496d8569bf",
+      "mojo_requires": ">=0.26.2",
+      "deps": [],
+      "changelog": "TLS 1.2 mTLS / ECDSA client auth: NewSessionTicket capture in session_tickets(), connect_with_client_cert(), CertificateRequest12 parser, CertificateVerify builder, _ecdsa_raw_to_der"
     }
   ]
 }
