@@ -46,6 +46,15 @@
       "mojo_requires": ">=0.26.2",
       "deps": [],
       "changelog": "TLS 1.2 mTLS / ECDSA client auth: NewSessionTicket capture in session_tickets(), connect_with_client_cert(), CertificateRequest12 parser, CertificateVerify builder, _ecdsa_raw_to_der"
+    },
+    {
+      "version": "1.3.0",
+      "published_at": "2026-04-07",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.3.0.tar.gz",
+      "sha256": "56431b801bc12145f89f46a84e39af2b00c8c4b6dccc7415ec57b0625a3b3039",
+      "mojo_requires": ">=0.26.2",
+      "deps": [],
+      "changelog": "ALPN extension support: alpn_protocols param in connect()/connect_with_client_cert(), negotiated_protocol() method; TLS 1.3 + 1.2 ALPN ClientHello builder and ServerHello parser (RFC 7301)"
     }
   ]
 }
