@@ -1,0 +1,25 @@
+{
+  "name": "flatbuffers",
+  "git_url": "Mosaad-M/flatbuffers",
+  "description": "Pure-Mojo FlatBuffers binary format encoder/decoder",
+  "license": "MIT",
+  "homepage": "https://github.com/Mosaad-M/flatbuffers",
+  "versions": [
+    {
+      "version": "1.0.1",
+      "published_at": "2026-04-08",
+      "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.0.1.tar.gz",
+      "sha256": "fbf63783cfeb744a391e7411ad3d30bb97fd94b401068057e4f290d88a52e181",
+      "mojo_requires": ">=0.26.2",
+      "deps": []
+    },
+    {
+      "version": "1.0.0",
+      "published_at": "2026-04-08",
+      "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.0.0.tar.gz",
+      "sha256": "7b78d074f321afbd66cc4fe89f5dd3f9a3c11d91d7016543c89b0f6c1e668a65",
+      "mojo_requires": ">=0.26.2",
+      "deps": []
+    }
+  ]
+}
