@@ -6,6 +6,14 @@
   "homepage": "https://github.com/Mosaad-M/flatbuffers",
   "versions": [
     {
+      "version": "1.0.2",
+      "published_at": "2026-04-08",
+      "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.0.2.tar.gz",
+      "sha256": "754955974f3c9585a6987f016c479ffde0dd471e9e39ab6803af4b11015a9549",
+      "mojo_requires": ">=0.26.2",
+      "deps": []
+    },
+    {
       "version": "1.0.1",
       "published_at": "2026-04-08",
       "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.0.1.tar.gz",
