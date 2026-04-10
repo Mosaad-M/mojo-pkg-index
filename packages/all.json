@@ -643,5 +643,24 @@
         "deps": []
       }
     ]
+  },
+  {
+    "name": "arrow",
+    "git_url": "Mosaad-M/arrow",
+    "description": "Pure-Mojo Apache Arrow IPC stream encoder/decoder (Feather v2)",
+    "license": "MIT",
+    "homepage": "https://github.com/Mosaad-M/arrow",
+    "versions": [
+      {
+        "version": "1.0.0",
+        "published_at": "2026-04-10",
+        "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v1.0.0.tar.gz",
+        "sha256": "8728217b552b742d412727b89b2915de356dfed6b22685fc7333d52529df7d2f",
+        "mojo_requires": ">=0.26.2",
+        "deps": [
+          "flatbuffers"
+        ]
+      }
+    ]
   }
 ]
