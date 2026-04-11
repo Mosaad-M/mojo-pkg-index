@@ -44,6 +44,15 @@
       "sha256": "ca4e6ada8df3042365f854dd367a407f6edc4729878057f2caf7ee287a827c62",
       "mojo_requires": ">=0.26.2",
       "deps": []
+    },
+    {
+      "version": "1.0.5",
+      "published_at": "2026-04-11",
+      "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v1.0.5.tar.gz",
+      "sha256": "ac10c8d789113037a5bf1fbcdbe463c72d59c0e738d4fa521f448beaf1ee272a",
+      "mojo_requires": ">=0.26.2",
+      "deps": [],
+      "changelog": "macOS compatibility: correct addrinfo.ai_addr offset (32 on macOS, 24 on Linux) and socket constants (SOL_SOCKET, SO_RCVTIMEO, SO_SNDTIMEO)"
     }
   ]
 }

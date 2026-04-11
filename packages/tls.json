@@ -55,6 +55,15 @@
       "mojo_requires": ">=0.26.2",
       "deps": [],
       "changelog": "ALPN extension support: alpn_protocols param in connect()/connect_with_client_cert(), negotiated_protocol() method; TLS 1.3 + 1.2 ALPN ClientHello builder and ServerHello parser (RFC 7301)"
+    },
+    {
+      "version": "1.3.1",
+      "published_at": "2026-04-11",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.3.1.tar.gz",
+      "sha256": "e52c5032162d4c827d125608bf1b72c8836bf0860fd6540c19049a12ea417e96",
+      "mojo_requires": ">=0.26.2",
+      "deps": [],
+      "changelog": "macOS compatibility: load_system_ca_bundle uses /etc/ssl/cert.pem on macOS; fix open() flags in test helpers for macOS ARM64"
     }
   ]
 }
