@@ -64,6 +64,15 @@
       "mojo_requires": ">=0.26.2",
       "deps": [],
       "changelog": "macOS compatibility: load_system_ca_bundle uses /etc/ssl/cert.pem on macOS; fix open() flags in test helpers for macOS ARM64"
+    },
+    {
+      "version": "1.3.2",
+      "published_at": "2026-04-11",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.3.2.tar.gz",
+      "sha256": "65e3f6f5f41fa08eb4c9a5dfeda05a589e4a517c9e1adbc31c1a709a5cf89be9",
+      "mojo_requires": ">=0.26.2",
+      "deps": [],
+      "changelog": "Fix comptime if scope bug in load_system_ca_bundle (v1.3.1 regression)"
     }
   ]
 }
