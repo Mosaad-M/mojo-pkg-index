@@ -28,6 +28,24 @@
       "sha256": "847e217105f30a76e19624fcc6d722be36b9448e6ef8490498ffef1b50e5c944",
       "mojo_requires": ">=0.26.2",
       "deps": ["tls", "tcp", "url"]
+    },
+    {
+      "version": "1.1.0",
+      "published_at": "2026-09-17",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.1.0.tar.gz",
+      "sha256": "f2a117effd35b4f67fc91e3c442f2bbf22850e2d73895cf626054fa69bf66ff1",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url"],
+      "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+    },
+    {
+      "version": "1.1.1",
+      "published_at": "2026-09-17",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.1.1.tar.gz",
+      "sha256": "7c6befdd565d93c2f7a2b26ba22ba4fefef8d34b52f7a68a16b92177bdb26e96",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url"],
+      "changelog": "_recv_exact() now distinguishes a real socket error, a receive timeout, and a clean peer close instead of reporting all three as the same generic message"
     }
   ]
 }
