@@ -1,5 +1,5 @@
-[
-  [
+{
+  "packages": [
     {
       "name": "json",
       "git_url": "Mosaad-M/json",
@@ -514,4 +514,4 @@
       ]
     }
   ]
-]
+}
