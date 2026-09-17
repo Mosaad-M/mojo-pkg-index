@@ -14,6 +14,17 @@
       "deps": [
         "flatbuffers"
       ]
+    },
+    {
+      "version": "1.1.0",
+      "published_at": "2026-09-17",
+      "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v1.1.0.tar.gz",
+      "sha256": "74bd990afd4a098780a73bbd1482c8b00eace901cc71ac4e4c7fe54b459361f4",
+      "mojo_requires": ">=1.0.0",
+      "deps": [
+        "flatbuffers"
+      ],
+      "changelog": "Mojo 1.0.0 (stable) compatibility migration"
     }
   ]
 }

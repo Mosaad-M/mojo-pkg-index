@@ -73,6 +73,15 @@
       "mojo_requires": ">=0.26.2",
       "deps": [],
       "changelog": "Fix comptime if scope bug in load_system_ca_bundle (v1.3.1 regression)"
+    },
+    {
+      "version": "1.4.0",
+      "published_at": "2026-09-17",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.0.tar.gz",
+      "sha256": "c7ee9a67ca97df6b4f663a87e02aa772591b230f81fb39d1ba31df5726fee859",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "Mojo 1.0.0 (stable) compatibility migration"
     }
   ]
 }

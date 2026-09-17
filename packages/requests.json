@@ -20,6 +20,15 @@
       "sha256": "5de7b52ef24c6ee3495e9ee6a7aa61ebfa169d00c87d7a6df9dfa5f2efc99cb3",
       "mojo_requires": ">=0.26.2",
       "deps": ["tls", "tcp", "url", "json"]
+    },
+    {
+      "version": "1.1.0",
+      "published_at": "2026-09-17",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.1.0.tar.gz",
+      "sha256": "2063456c3f12ccd713c35b0d2a4d84677d403e66fcb1c61c9de74ed559221b55",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url", "json"],
+      "changelog": "Mojo 1.0.0 (stable) compatibility migration"
     }
   ]
 }
