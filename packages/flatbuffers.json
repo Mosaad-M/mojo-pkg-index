@@ -37,6 +37,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
+    },
+    {
+      "version": "1.1.1",
+      "published_at": "2026-09-24",
+      "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.1.1.tar.gz",
+      "sha256": "537372df13c53825c3caa5613f9de79c86c9f12ba0e77e80823a1b4db7d28f82",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "Fix inverted soffset sign convention that broke interop with real Arrow/pyarrow"
     }
   ]
 }
