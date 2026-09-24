@@ -36,6 +36,17 @@
         "flatbuffers"
       ],
       "changelog": "Real pyarrow interop: fix trailing-magic bytes, Footer soffset (via flatbuffers >=1.1.1), RecordBatch body length, and csv_arrow.mojo's missing main()"
+    },
+    {
+      "version": "1.1.2",
+      "published_at": "2026-09-24",
+      "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v1.1.2.tar.gz",
+      "sha256": "6e689fcb3b1d6263187cf32f48eec098022b39de70e5e450453d0d87e5143ebb",
+      "mojo_requires": ">=1.0.0",
+      "deps": [
+        "flatbuffers"
+      ],
+      "changelog": "Perf: replace byte-by-byte copy loops with List.extend() (2.7-2.8x faster encode/decode_record_batch)"
     }
   ]
 }
