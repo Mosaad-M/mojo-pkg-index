@@ -33,12 +33,12 @@
         },
         {
           "version": "1.1.0",
-          "published_at": "2026-09-17",
+          "published_at": "2026-09-24",
           "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v1.1.0.tar.gz",
-          "sha256": "20cb7028bf634fffd09ad0e8986c5a8d700845f7ea7703028e5a66cd9329d142",
+          "sha256": "b0db95fea72f05051af41fe5ee8f8da0838e86fa77dc2cc86d2da46ec95a3ae3",
           "mojo_requires": ">=1.0.0",
           "deps": [],
-          "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+          "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
         }
       ]
     },
@@ -67,12 +67,12 @@
         },
         {
           "version": "1.1.0",
-          "published_at": "2026-09-17",
+          "published_at": "2026-09-24",
           "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.1.0.tar.gz",
-          "sha256": "e2561977b2d0bdbe667bb86fa58fa250fcf3e7b3ec27c8fe507cd9d84ba94fb3",
+          "sha256": "9fffe5942c4cf91ab966bcf705cdc40ba297baa8c49bcd38b37aaf152f42a3bd",
           "mojo_requires": ">=1.0.0",
           "deps": [],
-          "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+          "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
         }
       ]
     },
@@ -134,12 +134,12 @@
         },
         {
           "version": "1.1.0",
-          "published_at": "2026-09-17",
+          "published_at": "2026-09-24",
           "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v1.1.0.tar.gz",
-          "sha256": "0eb4891685e8aaa0fd5c699f47a43c77cb7d97ae0cb692b8274bc373d8c8430c",
+          "sha256": "9784724d0c9ab8afb22f82ec09ae3c4a5b7b5983ec77ca755899b3bbd9562d3e",
           "mojo_requires": ">=1.0.0",
           "deps": [],
-          "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+          "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
         }
       ]
     },
