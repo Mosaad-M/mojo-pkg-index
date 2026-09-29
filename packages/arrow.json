@@ -80,6 +80,17 @@
         "flatbuffers"
       ],
       "changelog": "Perf: fix two more byte-by-byte copy loops, in encode/decode_ipc_message (4.8-7.6x faster)"
+    },
+    {
+      "version": "1.2.2",
+      "published_at": "2026-09-29",
+      "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v1.2.2.tar.gz",
+      "sha256": "692aef0ce354a7788a9c7472fa41fde846b76a62e32231fb42b94b89cbdcc91d",
+      "mojo_requires": ">=1.0.0",
+      "deps": [
+        "flatbuffers"
+      ],
+      "changelog": "Security: fix integer overflow -> crash in decode_array/decode_list_utf8_array on crafted BufferDesc values"
     }
   ]
 }
