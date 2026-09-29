@@ -69,6 +69,17 @@
         "flatbuffers"
       ],
       "changelog": "Add List<Utf8> support: a real Arrow nested type, verified against real pyarrow"
+    },
+    {
+      "version": "1.2.1",
+      "published_at": "2026-09-29",
+      "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v1.2.1.tar.gz",
+      "sha256": "20abc23032d9f35106b484a673d3f5ae340f646ae20cd2ee883d255b92eaa752",
+      "mojo_requires": ">=1.0.0",
+      "deps": [
+        "flatbuffers"
+      ],
+      "changelog": "Perf: fix two more byte-by-byte copy loops, in encode/decode_ipc_message (4.8-7.6x faster)"
     }
   ]
 }
