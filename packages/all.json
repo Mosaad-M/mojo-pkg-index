@@ -596,6 +596,17 @@
             "flatbuffers"
           ],
           "changelog": "Add ArrowFileWriter: write Feather files one RecordBatch at a time in bounded memory (byte-identical to encode_arrow_file)"
+        },
+        {
+          "version": "2.0.0",
+          "published_at": "2026-09-30",
+          "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v2.0.0.tar.gz",
+          "sha256": "b7c7eaf7f4fbc37728f466a41179534dfb6d7a4c1914ea10085640e9d8ab303c",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "flatbuffers"
+          ],
+          "changelog": "Encode copies column bytes once (~7x faster, far lower peak memory); ArrowArray/RecordBatch take owned buffers (breaking: pass buf^ or buf.copy()). Encoded bytes unchanged."
         }
       ]
     }
