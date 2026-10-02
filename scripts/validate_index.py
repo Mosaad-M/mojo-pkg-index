@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate all package entries in the mojo-pkg-index.
+r"""Validate all package entries in the mojo-pkg-index.
 
 Checks performed for each packages/<name>.json:
   - name matches ^[a-z0-9][a-z0-9_-]{0,63}$

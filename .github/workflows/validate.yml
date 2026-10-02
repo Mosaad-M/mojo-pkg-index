@@ -1,10 +1,23 @@
 name: Validate Index
 
+# Runs on pushes to main as well as PRs: index entries are often pushed
+# straight to main when a package is released, and those were never
+# validated before.
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/**'
+      - 'index.json'
+      - 'scripts/validate_index.py'
+      - '.github/workflows/validate.yml'
   pull_request:
     paths:
       - 'packages/**'
       - 'index.json'
+      - 'scripts/validate_index.py'
+      - '.github/workflows/validate.yml'
+  workflow_dispatch:
 
 jobs:
   validate:
