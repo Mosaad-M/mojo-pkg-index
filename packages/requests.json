@@ -29,6 +29,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url", "json"],
       "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+    },
+    {
+      "version": "1.2.0",
+      "published_at": "2026-10-03",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.2.0.tar.gz",
+      "sha256": "113acd8a01892a5ddc4df46b8d16b728f0afda6528226941f4b3b65b93979e91",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url", "json"],
+      "changelog": "Requires json >= 3.0.1; HttpResponse.json() still returns a JsonValue; new HttpResponse.json_doc() returns a read-only JsonDoc."
     }
   ]
 }
