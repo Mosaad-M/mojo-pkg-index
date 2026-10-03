@@ -1,7 +1,7 @@
 {
   "name": "json",
   "git_url": "Mosaad-M/json",
-  "description": "Pure-Mojo JSON parser and serializer",
+  "description": "Strict RFC 8259 JSON parser and serializer in pure Mojo",
   "license": "MIT",
   "homepage": "https://github.com/Mosaad-M/json",
   "versions": [
@@ -37,6 +37,24 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
+    },
+    {
+      "version": "2.0.0",
+      "published_at": "2026-10-03",
+      "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v2.0.0.tar.gz",
+      "sha256": "8e00523ee0013958915def2f22f93768b490b76b1251a0153fc33b614d48342a",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "Strict RFC 8259 parsing, correctly rounded numbers (Eisel-Lemire / Schubfach), \\uXXXX decoding, nesting limit, hash-indexed objects. Breaking: rejects non-RFC input; floats print Python-style (100.0); len(string) counts codepoints."
+    },
+    {
+      "version": "3.0.1",
+      "published_at": "2026-10-03",
+      "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v3.0.1.tar.gz",
+      "sha256": "e5c215633a2b0ac53d608aeaa5b48e279b7e1c1cb0d19e6eb397de5754666594",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "Flat document layout: parse_json returns a read-only JsonDoc; lookups return JsonRef views (breaking: call to_value() for a mutable JsonValue). Parse up to 3.9x faster, worst-case memory ~8x input (was 85x), no recursion, no hash flooding. (3.0.1: no clock_gettime declaration, fixing a Linux symbol clash with requests 1.1.)"
     }
   ]
 }
