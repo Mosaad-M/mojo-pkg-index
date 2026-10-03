@@ -70,6 +70,16 @@
       "mojo_requires": ">=1.0.0",
       "deps": ["tcp", "tls"],
       "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+    },
+    {
+      "version": "1.5.1",
+      "published_at": "2026-10-03",
+      "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.5.1.tar.gz",
+      "sha256": "77eec87e62ae2c01aac8bea49996c99da1902e97c071074d4cdc3bccac9e3886",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tcp", "tls"],
+      "dep_constraints": {"tls": ">=1.4.3"},
+      "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
     }
   ]
 }
