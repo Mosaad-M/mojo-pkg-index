@@ -263,6 +263,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Accept certificate chains anchored at a cross-signed root (fixes HTTPS on Linux for e.g. Google Trust Services chains); exact byte comparison for keys"
+        },
+        {
+          "version": "1.4.3",
+          "published_at": "2026-10-03",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.3.tar.gz",
+          "sha256": "7a702e1998c4a44e7f111306d64f8ba1dd903780d3e26113453a7b1346cefb57",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "SECURITY (critical): certificate path validation now enforces CA constraints (basicConstraints, keyUsage, EKU, pathLen, name chaining, critical extensions); earlier versions let any trusted leaf certificate impersonate any host. Validity times fail closed."
         }
       ]
     },
