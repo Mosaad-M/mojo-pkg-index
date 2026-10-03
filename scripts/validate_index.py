@@ -7,7 +7,11 @@ Checks performed for each packages/<name>.json:
   - every version.sha256 is 64 lowercase hex chars (non-empty)
   - every version.version matches ^\d+\.\d+\.\d+$
   - all names in version.deps[] exist in index.json
+  - optional version.dep_constraints is an object whose keys are in deps[]
+    and whose values are constraints like ">=1.0.0,<2.0.0" (mojo-pkg >= 0.7.0)
   - no circular dependencies (DFS across the dep graph)
+  - packages/all.json (read first by mojo-pkg) matches every
+    packages/<name>.json exactly
 """
 
 import json
@@ -18,6 +22,9 @@ import sys
 NAME_RE = re.compile(r'^[a-z0-9][a-z0-9_-]{0,63}$')
 VERSION_RE = re.compile(r'^\d+\.\d+\.\d+$')
 SHA256_RE = re.compile(r'^[0-9a-f]{64}$')
+# One or more comparators joined by commas (all must hold); explicit operator
+COMPARATOR = r'\s*(>=|<=|>|<|=|\^)\d+\.\d+\.\d+\s*'
+CONSTRAINT_RE = re.compile(rf'^{COMPARATOR}(,{COMPARATOR})*$')
 URL_PREFIX = 'https://github.com/'
 
 errors = []
@@ -104,9 +111,45 @@ for pkg_name in sorted(known_packages):
                     errors.append(
                         f"{path}: dep '{dep}' is not listed in index.json"
                     )
+        constraints = v.get('dep_constraints', {})
+        if not isinstance(constraints, dict):
+            errors.append(f"{path}: version {ver}: 'dep_constraints' must be an object")
+        else:
+            for dep, constraint in constraints.items():
+                if not isinstance(deps, list) or dep not in deps:
+                    errors.append(
+                        f"{path}: version {ver}: dep_constraints key '{dep}' is not in deps"
+                    )
+                if not isinstance(constraint, str) or not CONSTRAINT_RE.match(constraint):
+                    errors.append(
+                        f"{path}: version {ver}: dep_constraints['{dep}'] = {constraint!r} "
+                        "is not a constraint like '>=1.0.0' or '>=1.0.0,<2.0.0'"
+                    )
         latest_deps = deps  # use deps from the last version for cycle check
 
     dep_graph[pkg_name] = latest_deps
+
+# ── all.json must mirror the per-package files (mojo-pkg reads it first) ──────
+all_path = 'packages/all.json'
+try:
+    all_pkgs = {p.get('name'): p for p in json.load(open(all_path)).get('packages', [])}
+except (OSError, json.JSONDecodeError) as e:
+    errors.append(f"{all_path}: cannot read: {e}")
+    all_pkgs = None
+if all_pkgs is not None:
+    if set(all_pkgs) != known_packages:
+        errors.append(
+            f"{all_path}: package set {sorted(all_pkgs)} != index.json {sorted(known_packages)}"
+        )
+    for pkg_name in sorted(known_packages & set(all_pkgs)):
+        try:
+            single = json.load(open(f'packages/{pkg_name}.json'))
+        except (OSError, json.JSONDecodeError):
+            continue  # already reported above
+        if single != all_pkgs[pkg_name]:
+            errors.append(
+                f"{all_path}: entry for '{pkg_name}' differs from packages/{pkg_name}.json"
+            )
 
 # ── Circular dependency check (DFS) ───────────────────────────────────────────
 def find_cycle(graph: dict[str, list[str]]) -> list[str] | None:
