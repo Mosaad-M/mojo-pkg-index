@@ -52,6 +52,28 @@ packages/
 }
 ```
 
+### Dependency constraints
+
+A version's `deps` lists the packages it needs. To restrict which versions of a
+dependency it works with, add an optional `dep_constraints` object (keys must appear in
+`deps`; a dep without an entry accepts any version):
+
+```json
+{
+  "version": "1.2.0",
+  "deps": ["tls", "tcp", "url", "json"],
+  "dep_constraints": {"json": ">=3.0.1"}
+}
+```
+
+A constraint is one or more comparators joined by commas, all of which must hold:
+`>=X.Y.Z`, `>X.Y.Z`, `<=X.Y.Z`, `<X.Y.Z`, `=X.Y.Z`, `^X.Y.Z` (e.g. `>=1.0.0,<2.0.0`).
+Set an upper bound whenever a new major version of a dependency breaks the package.
+Constraint-aware resolution needs mojo-pkg >= 0.7.0; older clients ignore the field.
+
+`packages/all.json` holds every package entry in one file (mojo-pkg fetches it first);
+it must match the individual `packages/<name>.json` files exactly. CI checks this.
+
 ## Security Model
 
 This index is the trust anchor for all `mojo-pkg install` operations. The following

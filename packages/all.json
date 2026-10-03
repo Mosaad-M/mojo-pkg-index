@@ -90,7 +90,7 @@
           "sha256": "9fffe5942c4cf91ab966bcf705cdc40ba297baa8c49bcd38b37aaf152f42a3bd",
           "mojo_requires": ">=1.0.0",
           "deps": [],
-          "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
+          "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         }
       ]
     },
@@ -157,7 +157,7 @@
           "sha256": "9784724d0c9ab8afb22f82ec09ae3c4a5b7b5983ec77ca755899b3bbd9562d3e",
           "mojo_requires": ">=1.0.0",
           "deps": [],
-          "changelog": "Mojo 1.0.0 (stable) compatibility migration + CI fix"
+          "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         }
       ]
     },
@@ -284,7 +284,10 @@
             "tcp",
             "url",
             "json"
-          ]
+          ],
+          "dep_constraints": {
+            "json": "<2.0.0"
+          }
         },
         {
           "version": "1.0.1",
@@ -297,7 +300,10 @@
             "tcp",
             "url",
             "json"
-          ]
+          ],
+          "dep_constraints": {
+            "json": "<2.0.0"
+          }
         },
         {
           "version": "1.1.0",
@@ -311,6 +317,9 @@
             "url",
             "json"
           ],
+          "dep_constraints": {
+            "json": "<2.0.0"
+          },
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         },
         {
@@ -325,6 +334,9 @@
             "url",
             "json"
           ],
+          "dep_constraints": {
+            "json": ">=3.0.1"
+          },
           "changelog": "Requires json >= 3.0.1; HttpResponse.json() still returns a JsonValue; new HttpResponse.json_doc() returns a read-only JsonDoc."
         }
       ]
