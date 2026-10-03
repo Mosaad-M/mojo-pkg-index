@@ -46,6 +46,16 @@
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url"],
       "changelog": "_recv_exact() now distinguishes a real socket error, a receive timeout, and a clean peer close instead of reporting all three as the same generic message"
+    },
+    {
+      "version": "1.1.2",
+      "published_at": "2026-10-03",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.1.2.tar.gz",
+      "sha256": "14b558971b890dfddf476f4f402742822ed59e4e1d81344ad023b0e056c9e043",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url"],
+      "dep_constraints": {"tls": ">=1.4.3"},
+      "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
     }
   ]
 }

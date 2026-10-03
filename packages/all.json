@@ -347,6 +347,24 @@
             "json": ">=3.0.1"
           },
           "changelog": "Requires json >= 3.0.1; HttpResponse.json() still returns a JsonValue; new HttpResponse.json_doc() returns a read-only JsonDoc."
+        },
+        {
+          "version": "1.2.1",
+          "published_at": "2026-10-03",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.2.1.tar.gz",
+          "sha256": "569d392bbc12f0c1b3e0a52784254c0f83ff62bf4a95ceeeb1a0e225c9fe275b",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "json": ">=3.0.1",
+            "tls": ">=1.4.3"
+          },
+          "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
         }
       ]
     },
@@ -418,6 +436,22 @@
             "url"
           ],
           "changelog": "_recv_exact() now distinguishes a real socket error, a receive timeout, and a clean peer close instead of reporting all three as the same generic message"
+        },
+        {
+          "version": "1.1.2",
+          "published_at": "2026-10-03",
+          "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.1.2.tar.gz",
+          "sha256": "14b558971b890dfddf476f4f402742822ed59e4e1d81344ad023b0e056c9e043",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url"
+          ],
+          "dep_constraints": {
+            "tls": ">=1.4.3"
+          },
+          "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
         }
       ]
     },
@@ -509,6 +543,21 @@
             "tls"
           ],
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+        },
+        {
+          "version": "1.5.1",
+          "published_at": "2026-10-03",
+          "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.5.1.tar.gz",
+          "sha256": "77eec87e62ae2c01aac8bea49996c99da1902e97c071074d4cdc3bccac9e3886",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tcp",
+            "tls"
+          ],
+          "dep_constraints": {
+            "tls": ">=1.4.3"
+          },
+          "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
         }
       ]
     },
