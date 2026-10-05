@@ -118,6 +118,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "SECURITY: recv_all() requires an authenticated close_notify (truncation; allow_truncation=True opts out); plaintext/undecryptable post-handshake alerts rejected; RSA PKCS#1 out-of-bounds read fixed; all-zero X25519 secret rejected; TLS 1.3 downgrade sentinel checked; TLS 1.3 padding stripped; no PKCS#1 in TLS 1.3 CertificateVerify; *.com wildcards rejected. Interop: RSA-PSS in TLS 1.2 ServerKeyExchange."
+    },
+    {
+      "version": "1.4.5",
+      "published_at": "2026-10-05",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.5.tar.gz",
+      "sha256": "10f2f472e5224845ba53771cb046765224b18cde2c604ab9d4530f3dd7e3864c",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "TLS 1.3 KeyUpdate (server key rotation no longer breaks connections; update requests answered). Socket I/O: resumable read timeouts reported as 'tls: read timed out', no SIGPIPE on writes to closed peers, EINTR retried, TlsSocket.set_timeout()."
     }
   ]
 }
