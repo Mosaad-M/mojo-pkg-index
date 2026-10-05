@@ -127,6 +127,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "TLS 1.3 KeyUpdate (server key rotation no longer breaks connections; update requests answered). Socket I/O: resumable read timeouts reported as 'tls: read timed out', no SIGPIPE on writes to closed peers, EINTR retried, TlsSocket.set_timeout()."
+    },
+    {
+      "version": "1.4.6",
+      "published_at": "2026-10-05",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.6.tar.gz",
+      "sha256": "4b00407e0f8d310edc92f1d3189af0fc2779620c681e39c83d3e60cdb8f63c8f",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "SECURITY: constant-time AES (bitsliced), GHASH (table-free) and P-256 secret-key operations (key generation, ECDH, ECDSA signing); removes cache-timing and scalar-length timing leaks. AES-GCM ~8x and P-256 ~3x faster."
     }
   ]
 }
