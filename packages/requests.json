@@ -52,6 +52,16 @@
       "deps": ["tls", "tcp", "url", "json"],
       "dep_constraints": {"json": ">=3.0.1", "tls": ">=1.4.3"},
       "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
+    },
+    {
+      "version": "1.2.2",
+      "published_at": "2026-10-05",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.2.2.tar.gz",
+      "sha256": "2d20d76c6c111ca4c6ceeb3c6fbfc683c3b5cfa88b8fc60f63be89a896e3a068",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url", "json"],
+      "dep_constraints": {"json": ">=3.0.1", "tls": ">=1.4.4"},
+      "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
     }
   ]
 }
