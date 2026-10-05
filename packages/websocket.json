@@ -56,6 +56,16 @@
       "deps": ["tls", "tcp", "url"],
       "dep_constraints": {"tls": ">=1.4.3"},
       "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
+    },
+    {
+      "version": "1.1.3",
+      "published_at": "2026-10-05",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.1.3.tar.gz",
+      "sha256": "972a751b0aa2cd5ec74373e271b3976764d8b200774c5c4ab621c4e8ca7e7ca8",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url"],
+      "dep_constraints": {"tls": ">=1.4.4"},
+      "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
     }
   ]
 }
