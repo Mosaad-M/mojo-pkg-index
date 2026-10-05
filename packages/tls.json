@@ -136,6 +136,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "SECURITY: constant-time AES (bitsliced), GHASH (table-free) and P-256 secret-key operations (key generation, ECDH, ECDSA signing); removes cache-timing and scalar-length timing leaks. AES-GCM ~8x and P-256 ~3x faster."
+    },
+    {
+      "version": "1.5.0",
+      "published_at": "2026-10-05",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.5.0.tar.gz",
+      "sha256": "dd60774534b48c5c056ce2d23465cd9e0d7995e33888412bc2eea79223229cbd",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "TLS 1.3 HelloRetryRequest (P-256/P-384); TLS 1.2 extended master secret and renegotiation_info; constant-time P-384 key exchange. Fixes: TLS 1.2 SHA-384 suites used the SHA-256 PRF; servers with P-384 ECDSA certificates could not connect."
     }
   ]
 }
