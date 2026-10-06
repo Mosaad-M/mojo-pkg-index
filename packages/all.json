@@ -308,6 +308,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "TLS 1.3 HelloRetryRequest (P-256/P-384); TLS 1.2 extended master secret and renegotiation_info; constant-time P-384 key exchange. Fixes: TLS 1.2 SHA-384 suites used the SHA-256 PRF; servers with P-384 ECDSA certificates could not connect."
+        },
+        {
+          "version": "1.6.0",
+          "published_at": "2026-10-06",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.6.0.tar.gz",
+          "sha256": "35d4ab19d9ecfb9ba78d4dbf2e19280e5ce8a7af212b7e6c3bfc48293758b237",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "SECURITY: fixes from a second review. A malformed certificate crashed the process; unbounded handshake buffering before authentication; strict TLS 1.2/1.3 state machines (also fixes servers that fragment handshake messages, e.g. facebook.com); nameConstraints and intermediate EKU enforced; RSA >= 2048; strict protocol/DER/signature parsing; TLS 1.2 mTLS over SHA-384 suites fixed."
         }
       ]
     },
