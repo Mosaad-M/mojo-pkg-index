@@ -326,6 +326,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "SHA-512 signatures (RSA PKCS#1/PSS, ecdsa-with-SHA512 and RSA-PSS SHA-512 certificates, TLS 1.3/1.2 rsa_pss_rsae_sha512 and TLS 1.2 rsa_pkcs1_sha512); AES-GCM keys prepared once per connection (64-byte records 4.9 -> 2.9 us); every peer-facing parser fuzzed in CI."
+        },
+        {
+          "version": "1.7.0",
+          "published_at": "2026-10-07",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.7.0.tar.gz",
+          "sha256": "ed14f36d2d39a37d7625e1d4f01c5aac916d09b942a69daf98e67b908ca2048d",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "Works alongside Mojo's std: declares no C function std declares (open/read/write, errno), so programs using tls with open(), listdir or get_errno compile again. Sockets use recv/send everywhere; CA bundles over 2 MB are no longer cut off. websocket <= 1.1.3 clashes with it: use websocket >= 1.2.0."
         }
       ]
     },
@@ -437,6 +446,23 @@
             "tls": ">=1.4.4"
           },
           "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
+        },
+        {
+          "version": "1.3.0",
+          "published_at": "2026-10-07",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.3.0.tar.gz",
+          "sha256": "459cfec26467a925b4ed53e24b06b84cfcdd1790485efe62dbdaba9c2ffcf85b",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "tls": ">=1.7.0"
+          },
+          "changelog": "No getenv/clock_gettime declarations of its own, so programs using HttpClient with std.os.getenv, open() or the std time functions compile; random multipart boundaries; requires tls 1.7.0."
         }
       ]
     },
@@ -457,7 +483,10 @@
             "tls",
             "tcp",
             "url"
-          ]
+          ],
+          "dep_constraints": {
+            "tls": "<1.7.0"
+          }
         },
         {
           "version": "1.0.1",
@@ -469,7 +498,10 @@
             "tls",
             "tcp",
             "url"
-          ]
+          ],
+          "dep_constraints": {
+            "tls": "<1.7.0"
+          }
         },
         {
           "version": "1.0.2",
@@ -481,7 +513,10 @@
             "tls",
             "tcp",
             "url"
-          ]
+          ],
+          "dep_constraints": {
+            "tls": "<1.7.0"
+          }
         },
         {
           "version": "1.1.0",
@@ -494,6 +529,9 @@
             "tcp",
             "url"
           ],
+          "dep_constraints": {
+            "tls": "<1.7.0"
+          },
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         },
         {
@@ -507,6 +545,9 @@
             "tcp",
             "url"
           ],
+          "dep_constraints": {
+            "tls": "<1.7.0"
+          },
           "changelog": "_recv_exact() now distinguishes a real socket error, a receive timeout, and a clean peer close instead of reporting all three as the same generic message"
         },
         {
@@ -521,7 +562,7 @@
             "url"
           ],
           "dep_constraints": {
-            "tls": ">=1.4.3"
+            "tls": ">=1.4.3,<1.7.0"
           },
           "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
         },
@@ -537,9 +578,25 @@
             "url"
           ],
           "dep_constraints": {
-            "tls": ">=1.4.4"
+            "tls": ">=1.4.4,<1.7.0"
           },
           "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
+        },
+        {
+          "version": "1.2.0",
+          "published_at": "2026-10-07",
+          "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.2.0.tar.gz",
+          "sha256": "d6bfb6a3d2c09cbde11d35ac127f52a0b10f891d2dd51dab40d0a0094fb04865",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url"
+          ],
+          "dep_constraints": {
+            "tls": ">=1.7.0"
+          },
+          "changelog": "errno via std.ffi.get_errno, so programs using WebSocket with open(), listdir or get_errno compile; requires tls 1.7.0."
         }
       ]
     },
@@ -661,6 +718,21 @@
             "tls": ">=1.4.4"
           },
           "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
+        },
+        {
+          "version": "1.6.0",
+          "published_at": "2026-10-07",
+          "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.6.0.tar.gz",
+          "sha256": "96fe85df6eef02762bf84299268e3764d0581034a521fc3697f5b5ce9ff311cf",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tcp",
+            "tls"
+          ],
+          "dep_constraints": {
+            "tls": ">=1.7.0"
+          },
+          "changelog": "SECURITY: the SCRAM client nonce now comes from the OS CSPRNG (was clock + PID). No getenv/clock_gettime declarations of its own, so programs using PgConnection with std APIs compile; requires tls 1.7.0."
         }
       ]
     },
