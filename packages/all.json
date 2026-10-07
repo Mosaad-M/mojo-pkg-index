@@ -460,6 +460,7 @@
             "json"
           ],
           "dep_constraints": {
+            "json": ">=3.0.1",
             "tls": ">=1.7.0"
           },
           "changelog": "No getenv/clock_gettime declarations of its own, so programs using HttpClient with std.os.getenv, open() or the std time functions compile; random multipart boundaries; requires tls 1.7.0."
