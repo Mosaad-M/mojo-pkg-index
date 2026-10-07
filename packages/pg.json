@@ -90,6 +90,16 @@
       "deps": ["tcp", "tls"],
       "dep_constraints": {"tls": ">=1.4.4"},
       "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
+    },
+    {
+      "version": "1.6.0",
+      "published_at": "2026-10-07",
+      "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.6.0.tar.gz",
+      "sha256": "96fe85df6eef02762bf84299268e3764d0581034a521fc3697f5b5ce9ff311cf",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tcp", "tls"],
+      "dep_constraints": {"tls": ">=1.7.0"},
+      "changelog": "SECURITY: the SCRAM client nonce now comes from the OS CSPRNG (was clock + PID). No getenv/clock_gettime declarations of its own, so programs using PgConnection with std APIs compile; requires tls 1.7.0."
     }
   ]
 }
