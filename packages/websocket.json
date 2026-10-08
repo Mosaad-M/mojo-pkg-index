@@ -12,7 +12,7 @@
       "sha256": "98d437e49aff1415b6930d18dec26a57f76fcbf586f15f2f5f38892e050c4fea",
       "mojo_requires": ">=0.26.2",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": "<1.7.0"}
+      "dep_constraints": {"tcp": "<2.0.0", "tls": "<1.7.0"}
     },
     {
       "version": "1.0.1",
@@ -21,7 +21,7 @@
       "sha256": "40b63decda4cc3bde70735f26cdd9353d5496b8947958b0d8f6d65ef53100420",
       "mojo_requires": ">=0.26.2",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": "<1.7.0"}
+      "dep_constraints": {"tcp": "<2.0.0", "tls": "<1.7.0"}
     },
     {
       "version": "1.0.2",
@@ -30,7 +30,7 @@
       "sha256": "847e217105f30a76e19624fcc6d722be36b9448e6ef8490498ffef1b50e5c944",
       "mojo_requires": ">=0.26.2",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": "<1.7.0"}
+      "dep_constraints": {"tcp": "<2.0.0", "tls": "<1.7.0"}
     },
     {
       "version": "1.1.0",
@@ -39,7 +39,7 @@
       "sha256": "f2a117effd35b4f67fc91e3c442f2bbf22850e2d73895cf626054fa69bf66ff1",
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": "<1.7.0"},
+      "dep_constraints": {"tcp": "<2.0.0", "tls": "<1.7.0"},
       "changelog": "Mojo 1.0.0 (stable) compatibility migration"
     },
     {
@@ -49,7 +49,7 @@
       "sha256": "7c6befdd565d93c2f7a2b26ba22ba4fefef8d34b52f7a68a16b92177bdb26e96",
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": "<1.7.0"},
+      "dep_constraints": {"tcp": "<2.0.0", "tls": "<1.7.0"},
       "changelog": "_recv_exact() now distinguishes a real socket error, a receive timeout, and a clean peer close instead of reporting all three as the same generic message"
     },
     {
@@ -59,7 +59,7 @@
       "sha256": "14b558971b890dfddf476f4f402742822ed59e4e1d81344ad023b0e056c9e043",
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": ">=1.4.3,<1.7.0"},
+      "dep_constraints": {"tcp": "<2.0.0", "tls": ">=1.4.3,<1.7.0"},
       "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
     },
     {
@@ -69,7 +69,7 @@
       "sha256": "972a751b0aa2cd5ec74373e271b3976764d8b200774c5c4ab621c4e8ca7e7ca8",
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": ">=1.4.4,<1.7.0"},
+      "dep_constraints": {"tcp": "<2.0.0", "tls": ">=1.4.4,<1.7.0"},
       "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
     },
     {
@@ -79,8 +79,18 @@
       "sha256": "d6bfb6a3d2c09cbde11d35ac127f52a0b10f891d2dd51dab40d0a0094fb04865",
       "mojo_requires": ">=1.0.0",
       "deps": ["tls", "tcp", "url"],
-      "dep_constraints": {"tls": ">=1.7.0"},
+      "dep_constraints": {"tcp": "<2.0.0", "tls": ">=1.7.0"},
       "changelog": "errno via std.ffi.get_errno, so programs using WebSocket with open(), listdir or get_errno compile; requires tls 1.7.0."
+    },
+    {
+      "version": "1.3.0",
+      "published_at": "2026-10-08",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.3.0.tar.gz",
+      "sha256": "b6d2b1a20bf65d5e233ff20a06deddc10efb3c3145dd35061110020720eb2f55",
+      "mojo_requires": ">=1.0.0",
+      "deps": ["tls", "tcp", "url"],
+      "dep_constraints": {"tcp": ">=2.0.0", "tls": ">=1.7.0"},
+      "changelog": "tcp 2.0.0: wss:// hands the socket over with detach(); ws:// sends complete or raise; no SIGPIPE."
     }
   ]
 }
