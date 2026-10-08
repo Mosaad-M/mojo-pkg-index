@@ -80,6 +80,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Receives ~4.5x faster (recv_bytes 1.6 -> 7+ GB/s); recv_bytes_exact no longer reserves server-supplied lengths up front and one recv() is at most 1 MiB; timeout_secs bounds the whole connect across all addresses; huge timeouts no longer overflow."
+    },
+    {
+      "version": "2.0.2",
+      "published_at": "2026-10-08",
+      "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v2.0.2.tar.gz",
+      "sha256": "b97c0cb40af739d83217faed14695ae0d5265b7824e6d89a3acf59cd10b467ac",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "TCP_NODELAY by default (removes a ~40 ms delayed-ACK stall per multi-write request on Linux, e.g. pg exec_params; connect(..., nodelay=False) opts out); peer_closed() for pooled connections."
     }
   ]
 }
