@@ -544,6 +544,25 @@
             "tls": ">=1.7.0"
           },
           "changelog": "tcp 2.0.0: TlsSocket(sock.detach()); plain-HTTP sends complete or raise; no SIGPIPE."
+        },
+        {
+          "version": "1.5.0",
+          "published_at": "2026-10-08",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.5.0.tar.gz",
+          "sha256": "27d1d84722937ef5e86e796f4df10d4b8a6035a38770c2c165dfe9ac670028de",
+          "mojo_requires": ">=1.0.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "json": ">=3.0.1",
+            "tcp": ">=2.0.0",
+            "tls": ">=1.7.0"
+          },
+          "changelog": "No linker flags: zlib/libzstd/libbrotlidec are opened at runtime and Accept-Encoding lists only what can be decoded (builds with $(cat .mojo_flags) alone). Fixed HTTP/2 PADDED frames (google.com gzip failed)."
         }
       ]
     },
