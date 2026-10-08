@@ -371,6 +371,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Hardware AES-GCM (ARMv8 crypto / x86 AES-NI + PCLMULQDQ, constant time; software path kept for other targets) and a rewritten receive path: recv loop 34 -> ~1,000 MB/s, recv_all 1 -> 719 MB/s, small reads 22 -> 0.2 us; recv_exact no longer reserves peer-supplied lengths up front. No API change."
+        },
+        {
+          "version": "1.8.1",
+          "published_at": "2026-10-08",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.8.1.tar.gz",
+          "sha256": "65bff5ea36548e82b5e1c41a73c5a9d9c975495eca27689613a78b5a4b554be2",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "Parity with OpenSSL: fused AES-CTR + GHASH (AES-256-GCM 1.8 -> 4.8 GB/s), records decrypted in place, sends without byte copies: recv loop ~1,000 -> ~1,230 MB/s (Python/OpenSSL 1,160-1,260 on the same server), recv_all 719 -> 1,140, send 446 -> 1,790 MB/s. A record that fails authentication leaves no plaintext behind. No API change."
         }
       ]
     },
