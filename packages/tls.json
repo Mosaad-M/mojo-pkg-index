@@ -190,6 +190,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Parity with OpenSSL: fused AES-CTR + GHASH (AES-256-GCM 1.8 -> 4.8 GB/s), records decrypted in place, sends without byte copies: recv loop ~1,000 -> ~1,230 MB/s (Python/OpenSSL 1,160-1,260 on the same server), recv_all 719 -> 1,140, send 446 -> 1,790 MB/s. A record that fails authentication leaves no plaintext behind. No API change."
+    },
+    {
+      "version": "1.8.2",
+      "published_at": "2026-10-08",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.8.2.tar.gz",
+      "sha256": "d1f47427251080e4c025ae1e8abb7f59c98edabdf96d47fba566d5db4f4db31a",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "Fast ChaCha20-Poly1305: 16-block SIMD ChaCha20 and radix-2^44 Poly1305 (portable, constant time): AEAD 37 -> ~930 MB/s, recv over TLS_CHACHA20_POLY1305_SHA256 ~37 -> ~740 MB/s (Python/OpenSSL 695-732 on the same server). TLS 1.2 records are built whole (one copy less per send). No API change."
     }
   ]
 }
