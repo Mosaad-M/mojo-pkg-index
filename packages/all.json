@@ -389,6 +389,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Fast ChaCha20-Poly1305: 16-block SIMD ChaCha20 and radix-2^44 Poly1305 (portable, constant time): AEAD 37 -> ~930 MB/s, recv over TLS_CHACHA20_POLY1305_SHA256 ~37 -> ~740 MB/s (Python/OpenSSL 695-732 on the same server). TLS 1.2 records are built whole (one copy less per send). No API change."
+        },
+        {
+          "version": "1.9.0",
+          "published_at": "2026-10-08",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.9.0.tar.gz",
+          "sha256": "f06b9ee5f95c38565659a482d59aecf2d8495363c223f8380034b0102ba227d5",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "Fast handshakes: 64-bit Montgomery arithmetic for ECDSA/ECDH (constant time kept) and RSA. Verify: RSA-2048 36.5 -> 0.08 ms, P-256 18.5 -> 0.24 ms; real-site handshakes 92-457 -> 23-40 ms (same as Python/OpenSSL). No API change."
         }
       ]
     },
