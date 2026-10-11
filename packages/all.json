@@ -57,6 +57,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Flat document layout: parse_json returns a read-only JsonDoc; lookups return JsonRef views (breaking: call to_value() for a mutable JsonValue). Parse up to 3.9x faster, worst-case memory ~8x input (was 85x), no recursion, no hash flooding. (3.0.1: no clock_gettime declaration, fixing a Linux symbol clash with requests 1.1.)"
+        },
+        {
+          "version": "3.0.2",
+          "published_at": "2026-10-11",
+          "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v3.0.2.tar.gz",
+          "sha256": "10a852b83d75a0d36e2d09307d6c7653ca117d4189ff9d18aec1116e722ae932",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): uses Array (was InlineArray), value.__hash__(hasher), and String-from-slice, forms both versions accept. No behavior change. CI now also tests on the newest Mojo release."
         }
       ]
     },
@@ -398,6 +407,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Fast handshakes: 64-bit Montgomery arithmetic for ECDSA/ECDH (constant time kept) and RSA. Verify: RSA-2048 36.5 -> 0.08 ms, P-256 18.5 -> 0.24 ms; real-site handshakes 92-457 -> 23-40 ms (same as Python/OpenSSL). No API change."
+        },
+        {
+          "version": "1.9.1",
+          "published_at": "2026-10-11",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.9.1.tar.gz",
+          "sha256": "04f5296f16e97cf68832c989d5049364c7f4a2d25c2273c25df7e1c82e6d5d84",
+          "mojo_requires": ">=1.0.0",
+          "deps": [],
+          "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): InlineArray renamed to Array, which 1.0 also has. No behavior change. CI now also tests on the newest Mojo release."
         }
       ]
     },
