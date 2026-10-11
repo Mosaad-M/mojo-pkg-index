@@ -55,6 +55,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Flat document layout: parse_json returns a read-only JsonDoc; lookups return JsonRef views (breaking: call to_value() for a mutable JsonValue). Parse up to 3.9x faster, worst-case memory ~8x input (was 85x), no recursion, no hash flooding. (3.0.1: no clock_gettime declaration, fixing a Linux symbol clash with requests 1.1.)"
+    },
+    {
+      "version": "3.0.2",
+      "published_at": "2026-10-11",
+      "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v3.0.2.tar.gz",
+      "sha256": "10a852b83d75a0d36e2d09307d6c7653ca117d4189ff9d18aec1116e722ae932",
+      "mojo_requires": ">=1.0.0",
+      "deps": [],
+      "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): uses Array (was InlineArray), value.__hash__(hasher), and String-from-slice, forms both versions accept. No behavior change. CI now also tests on the newest Mojo release."
     }
   ]
 }
