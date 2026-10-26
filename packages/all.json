@@ -626,6 +626,23 @@
             "tls": ">=1.7.0"
           },
           "changelog": "No linker flags: zlib/libzstd/libbrotlidec are opened at runtime and Accept-Encoding lists only what can be decoded (builds with $(cat .mojo_flags) alone). Fixed HTTP/2 PADDED frames (google.com gzip failed)."
+        },
+        {
+          "version": "1.6.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.6.0.tar.gz",
+          "sha256": "5a4d9599b42b62983637e2579261391a88aade872140a1f6c5a5d4036f27517e",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "json": ">=3.1.0"
+          },
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change. Needs json >= 3.1.0."
         }
       ]
     },
@@ -785,6 +802,23 @@
             "tls": ">=1.7.0"
           },
           "changelog": "tcp 2.0.0: wss:// hands the socket over with detach(); ws:// sends complete or raise; no SIGPIPE."
+        },
+        {
+          "version": "1.4.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.4.0.tar.gz",
+          "sha256": "1c30b8c77cdcbde974f0c476d8d7f9736816d74a4540ccb6655aa195ef2396b6",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url"
+          ],
+          "dep_constraints": {
+            "tcp": ">=2.0.0",
+            "tls": ">=1.7.0"
+          },
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     },
@@ -974,6 +1008,22 @@
             "tls": ">=1.7.0"
           },
           "changelog": "SECURITY: backend message lengths are capped at 1 GiB before reading (a hostile server could make the client reserve up to 2 GiB per message); requires tcp 2.0.1."
+        },
+        {
+          "version": "1.8.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.8.0.tar.gz",
+          "sha256": "993605ff48d31c510d3ca79c8e758e109a5ba8fa36fd06eb474184c5deda38b2",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tcp",
+            "tls"
+          ],
+          "dep_constraints": {
+            "tcp": ">=2.0.1",
+            "tls": ">=1.7.0"
+          },
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     },
