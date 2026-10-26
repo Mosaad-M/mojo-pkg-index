@@ -29,6 +29,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+    },
+    {
+      "version": "1.2.0",
+      "published_at": "2026-10-26",
+      "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.2.0.tar.gz",
+      "sha256": "44f856ccb9e5ec42057c2a69dafd6bccd8b04dc7e98456e75e10accfcb6e072c",
+      "mojo_requires": ">=1.2.0",
+      "deps": [],
+      "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
     }
   ]
 }

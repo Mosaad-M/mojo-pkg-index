@@ -124,6 +124,17 @@
         "flatbuffers"
       ],
       "changelog": "Add public encode_file_header / encode_record_batch_header / encode_file_footer (+ FileBlock) for callers that write their own column bytes. Encoded bytes unchanged."
+    },
+    {
+      "version": "2.2.0",
+      "published_at": "2026-10-26",
+      "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v2.2.0.tar.gz",
+      "sha256": "adec6b78a012d0e3d820176d19a18f66df088ca5f1a55b68435d093cc1dd1328",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "flatbuffers"
+      ],
+      "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
     }
   ]
 }

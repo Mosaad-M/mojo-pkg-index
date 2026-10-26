@@ -217,6 +217,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): InlineArray renamed to Array, which 1.0 also has. No behavior change. CI now also tests on the newest Mojo release."
+    },
+    {
+      "version": "1.10.0",
+      "published_at": "2026-10-26",
+      "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.10.0.tar.gz",
+      "sha256": "ed09dcca6194e8ff7b26d438e003992a72f3ec13051600e41a60d5ee96520551",
+      "mojo_requires": ">=1.2.0",
+      "deps": [],
+      "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
     }
   ]
 }

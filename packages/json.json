@@ -64,6 +64,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): uses Array (was InlineArray), value.__hash__(hasher), and String-from-slice, forms both versions accept. No behavior change. CI now also tests on the newest Mojo release."
+    },
+    {
+      "version": "3.1.0",
+      "published_at": "2026-10-26",
+      "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v3.1.0.tar.gz",
+      "sha256": "34ed085dd4a3ce67a2b338f50e4aeac4be7c51cdb5d78687ef41b2b10425feeb",
+      "mojo_requires": ">=1.2.0",
+      "deps": [],
+      "changelog": "Requires Mojo >= 1.2.0: std.hashlib renamed std.hash. Use 3.0.2 for Mojo 1.0/1.1."
     }
   ]
 }

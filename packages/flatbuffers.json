@@ -46,6 +46,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "Fix inverted soffset sign convention that broke interop with real Arrow/pyarrow"
+    },
+    {
+      "version": "1.2.0",
+      "published_at": "2026-10-26",
+      "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.2.0.tar.gz",
+      "sha256": "c0a54e9207bf390d401a3e4126c10486bb3e54f042b6ee670ec89ebc6988b039",
+      "mojo_requires": ">=1.2.0",
+      "deps": [],
+      "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
     }
   ]
 }
