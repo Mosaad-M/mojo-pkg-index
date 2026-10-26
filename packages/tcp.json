@@ -89,6 +89,15 @@
       "mojo_requires": ">=1.0.0",
       "deps": [],
       "changelog": "TCP_NODELAY by default (removes a ~40 ms delayed-ACK stall per multi-write request on Linux, e.g. pg exec_params; connect(..., nodelay=False) opts out); peer_closed() for pooled connections."
+    },
+    {
+      "version": "2.1.0",
+      "published_at": "2026-10-26",
+      "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v2.1.0.tar.gz",
+      "sha256": "a205b3cf6fdb71865d9bb1b3dd0a42ae2100c51b0e5d0e00cb5fe03f5e317f3e",
+      "mojo_requires": ">=1.2.0",
+      "deps": [],
+      "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
     }
   ]
 }

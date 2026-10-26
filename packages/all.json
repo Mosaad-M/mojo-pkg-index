@@ -66,6 +66,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): uses Array (was InlineArray), value.__hash__(hasher), and String-from-slice, forms both versions accept. No behavior change. CI now also tests on the newest Mojo release."
+        },
+        {
+          "version": "3.1.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/json/archive/refs/tags/v3.1.0.tar.gz",
+          "sha256": "34ed085dd4a3ce67a2b338f50e4aeac4be7c51cdb5d78687ef41b2b10425feeb",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Requires Mojo >= 1.2.0: std.hashlib renamed std.hash. Use 3.0.2 for Mojo 1.0/1.1."
         }
       ]
     },
@@ -100,6 +109,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+        },
+        {
+          "version": "1.2.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/url/archive/refs/tags/v1.2.0.tar.gz",
+          "sha256": "44f856ccb9e5ec42057c2a69dafd6bccd8b04dc7e98456e75e10accfcb6e072c",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     },
@@ -194,6 +212,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "TCP_NODELAY by default (removes a ~40 ms delayed-ACK stall per multi-write request on Linux, e.g. pg exec_params; connect(..., nodelay=False) opts out); peer_closed() for pooled connections."
+        },
+        {
+          "version": "2.1.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v2.1.0.tar.gz",
+          "sha256": "a205b3cf6fdb71865d9bb1b3dd0a42ae2100c51b0e5d0e00cb5fe03f5e317f3e",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     },
@@ -416,6 +443,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): InlineArray renamed to Array, which 1.0 also has. No behavior change. CI now also tests on the newest Mojo release."
+        },
+        {
+          "version": "1.10.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.10.0.tar.gz",
+          "sha256": "ed09dcca6194e8ff7b26d438e003992a72f3ec13051600e41a60d5ee96520551",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     },
@@ -989,6 +1025,15 @@
           "mojo_requires": ">=1.0.0",
           "deps": [],
           "changelog": "Fix inverted soffset sign convention that broke interop with real Arrow/pyarrow"
+        },
+        {
+          "version": "1.2.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/flatbuffers/archive/refs/tags/v1.2.0.tar.gz",
+          "sha256": "c0a54e9207bf390d401a3e4126c10486bb3e54f042b6ee670ec89ebc6988b039",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     },
@@ -1118,6 +1163,17 @@
             "flatbuffers"
           ],
           "changelog": "Add public encode_file_header / encode_record_batch_header / encode_file_footer (+ FileBlock) for callers that write their own column bytes. Encoded bytes unchanged."
+        },
+        {
+          "version": "2.2.0",
+          "published_at": "2026-10-26",
+          "tarball_url": "https://github.com/Mosaad-M/arrow/archive/refs/tags/v2.2.0.tar.gz",
+          "sha256": "adec6b78a012d0e3d820176d19a18f66df088ca5f1a55b68435d093cc1dd1328",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "flatbuffers"
+          ],
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         }
       ]
     }
