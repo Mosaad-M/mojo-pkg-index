@@ -643,6 +643,23 @@
             "json": ">=3.1.0"
           },
           "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change. Needs json >= 3.1.0."
+        },
+        {
+          "version": "1.7.0",
+          "published_at": "2026-11-13",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.7.0.tar.gz",
+          "sha256": "29c2281db7a08375d03d57ba4c5f64f0e08402bf471e1e4a0815eae40ad735a8",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "json": ">=3.1.0"
+          },
+          "changelog": "Adds total_timeout_secs deadline, retries (max_retries), HTTP/2 multiplexing (get_many), and configurable max_response_bytes/max_header_bytes/max_batch_bytes. Additive API. Behavior changes: POST/PATCH no longer replayed on a stale pooled connection unless retry_non_idempotent; h1 headers >1 MB and h2 bodies >100 MB rejected; ENABLE_PUSH=0 sent."
         }
       ]
     },
