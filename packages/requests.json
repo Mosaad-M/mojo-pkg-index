@@ -203,6 +203,23 @@
         "json": ">=3.1.0"
       },
       "changelog": "Adds total_timeout_secs deadline, retries (max_retries), HTTP/2 multiplexing (get_many), and configurable max_response_bytes/max_header_bytes/max_batch_bytes. Additive API. Behavior changes: POST/PATCH no longer replayed on a stale pooled connection unless retry_non_idempotent; h1 headers >1 MB and h2 bodies >100 MB rejected; ENABLE_PUSH=0 sent."
+    },
+    {
+      "version": "1.7.1",
+      "published_at": "2026-11-14",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.7.1.tar.gz",
+      "sha256": "37b77c8ba6f5119ba09b8caa57cd6758ba49d12a8a9bed2b22b5965edbbbed2c",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "json": ">=3.1.0"
+      },
+      "changelog": "Bug fixes, no API change. Content-Length and Transfer-Encoding are matched as header names only (a header such as X-Amz-Meta-Content-Length, or a value containing the text, no longer truncates the body and desyncs the keep-alive connection). Chunked bodies are detected when Transfer-Encoding is the last header (S3 listings: ~6.5 s to ~0.7 s)."
     }
   ]
 }
