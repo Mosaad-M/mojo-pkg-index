@@ -677,6 +677,23 @@
             "json": ">=3.1.0"
           },
           "changelog": "Bug fixes, no API change. Content-Length and Transfer-Encoding are matched as header names only (a header such as X-Amz-Meta-Content-Length, or a value containing the text, no longer truncates the body and desyncs the keep-alive connection). Chunked bodies are detected when Transfer-Encoding is the last header (S3 listings: ~6.5 s to ~0.7 s)."
+        },
+        {
+          "version": "1.8.0",
+          "published_at": "2026-11-14",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.8.0.tar.gz",
+          "sha256": "c36d4dcb5a6a573d0d0087a675375530ff2962fba1bf27a5b5e97914916642b0",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "json": ">=3.1.0"
+          },
+          "changelog": "HTTP/1.1 response framing is decided once, from the parsed headers. Behavior change: ambiguous framing now raises ParseError (differing or non-numeric Content-Length, whitespace before the colon or a line continuation in Content-Length/Transfer-Encoding, unsupported transfer codings such as 'gzip, chunked', chunked not last). Transfer-Encoding wins over Content-Length, and such connections are not reused. Chunked trailers split across reads no longer time out. max_response_bytes above 100 MB now works for HTTP/1.1. No API changes; pin to 1.7.1 if you rely on lenient parsing."
         }
       ]
     },
