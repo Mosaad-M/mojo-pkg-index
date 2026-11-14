@@ -10,7 +10,7 @@ The official package index for [mojo-pkg](https://github.com/Mosaad-M/mojo-pkg) 
 | [url](https://github.com/Mosaad-M/url) | Pure Mojo URL parser | 1.2.0 |
 | [tcp](https://github.com/Mosaad-M/tcp) | Pure Mojo TCP socket layer | 2.1.0 |
 | [tls](https://github.com/Mosaad-M/tls) | Pure Mojo TLS 1.3 + 1.2 client | 1.10.0 |
-| [requests](https://github.com/Mosaad-M/requests) | Pure Mojo HTTP/HTTPS client | 1.7.0 |
+| [requests](https://github.com/Mosaad-M/requests) | Pure Mojo HTTP/HTTPS client | 1.7.1 |
 | [websocket](https://github.com/Mosaad-M/websocket) | Pure Mojo WebSocket client (RFC 6455) | 1.4.0 |
 | [pg](https://github.com/Mosaad-M/pg) | Pure Mojo PostgreSQL client | 1.8.0 |
 | [flatbuffers](https://github.com/Mosaad-M/flatbuffers) | Pure Mojo FlatBuffers encoder/decoder | 1.2.0 |
