@@ -237,6 +237,23 @@
         "json": ">=3.1.0"
       },
       "changelog": "HTTP/1.1 response framing is decided once, from the parsed headers. Behavior change: ambiguous framing now raises ParseError (differing or non-numeric Content-Length, whitespace before the colon or a line continuation in Content-Length/Transfer-Encoding, unsupported transfer codings such as 'gzip, chunked', chunked not last). Transfer-Encoding wins over Content-Length, and such connections are not reused. Chunked trailers split across reads no longer time out. max_response_bytes above 100 MB now works for HTTP/1.1. No API changes; pin to 1.7.1 if you rely on lenient parsing."
+    },
+    {
+      "version": "1.8.1",
+      "published_at": "2026-11-14",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.8.1.tar.gz",
+      "sha256": "feab43ba0332fe4349ce4225d7fb36534dd6aa9aa76cda770fd8f5d18fafe708",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "json": ">=3.1.0"
+      },
+      "changelog": "Bug fixes, no API change. Security: a chunk size such as 7FFFFFFFFFFFFFFF no longer aborts the process (ChunkedBodyError), and a malformed HPACK string from an HTTP/2 server raises instead of reading past the block. Performance: chunked bodies are decoded in linear time (4x16 MiB: 6.4 s to 0.2 s), large bodies are copied faster (#47) and no longer held twice in memory (1.8.0 regression). Brotli bodies that expand more than 8x now decode (#45)."
     }
   ]
 }
