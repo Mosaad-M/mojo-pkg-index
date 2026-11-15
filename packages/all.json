@@ -452,6 +452,15 @@
           "mojo_requires": ">=1.2.0",
           "deps": [],
           "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
+        },
+        {
+          "version": "1.11.0",
+          "published_at": "2026-11-15",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.11.0.tar.gz",
+          "sha256": "7dcf80c682bd95fcb85193949aa05428253860234c2d53ff87d0bfbcb61ca8cd",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "TlsSocket.negotiated_protocol() now reports the ALPN protocol on TLS 1.2 connections (it returned \"\"); a ServerHello that selects a protocol that was not offered, an unsolicited ALPN or several protocols is rejected. load_system_ca_bundle() honours $SSL_CERT_FILE (a missing file raises) and finds the CA bundle on Fedora/RHEL, openSUSE and Alpine; new load_ca_bundle(path). Thanks to winding-lines for #21/#22."
         }
       ]
     },
