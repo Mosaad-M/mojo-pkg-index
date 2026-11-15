@@ -271,6 +271,23 @@
         "json": ">=3.1.0"
       },
       "changelog": "Additive. HttpClient gains trust_env (False ignores HTTP(S)_PROXY/NO_PROXY), decompress (False returns bodies as sent), default_content_type (\"\" sends none) and a connections_opened counter. Interim 1xx responses are skipped and 204/304 no longer wait for a body on keep-alive connections. Caller-supplied Host, User-Agent and Connection headers replace the defaults. Behavior change: empty POST/PUT/PATCH now send Content-Length: 0, and get_stream caps the response header block at max_header_bytes. Thanks to winding-lines for #40, #41, #42 and #46."
+    },
+    {
+      "version": "1.10.0",
+      "published_at": "2026-11-15",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.10.0.tar.gz",
+      "sha256": "97dcc9616d5579c66a43d1243b06640c5adddbacc3d202fe66f58555e7032087",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "json": ">=3.1.0"
+      },
+      "changelog": "Security hardening; rejects traffic that worked before (pin 1.9.0 if you rely on it). Cookies: Domain must cover the request host, control characters rejected, jar capped (3000 cookies, 4096 bytes each). Redirects drop Authorization, Cookie and Proxy-Authorization when the scheme, host or port changes. A chunked body cut before its terminal chunk raises ChunkedBodyError, and get_stream raises on a body shorter than Content-Length. Decompressed output is capped by max_response_bytes. NUL/control characters are rejected in header names, values and paths. HPACK table size updates above the advertised limit are errors. allow_private_ips still does not apply to the target of a proxied request."
     }
   ]
 }
