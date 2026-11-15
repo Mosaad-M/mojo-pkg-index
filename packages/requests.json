@@ -254,6 +254,23 @@
         "json": ">=3.1.0"
       },
       "changelog": "Bug fixes, no API change. Security: a chunk size such as 7FFFFFFFFFFFFFFF no longer aborts the process (ChunkedBodyError), and a malformed HPACK string from an HTTP/2 server raises instead of reading past the block. Performance: chunked bodies are decoded in linear time (4x16 MiB: 6.4 s to 0.2 s), large bodies are copied faster (#47) and no longer held twice in memory (1.8.0 regression). Brotli bodies that expand more than 8x now decode (#45)."
+    },
+    {
+      "version": "1.9.0",
+      "published_at": "2026-11-15",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.9.0.tar.gz",
+      "sha256": "22cca3cdfe2eab9c9cf99718ec0b146e887861084f1dd7a4e013f7ce6599f9b9",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "json": ">=3.1.0"
+      },
+      "changelog": "Additive. HttpClient gains trust_env (False ignores HTTP(S)_PROXY/NO_PROXY), decompress (False returns bodies as sent), default_content_type (\"\" sends none) and a connections_opened counter. Interim 1xx responses are skipped and 204/304 no longer wait for a body on keep-alive connections. Caller-supplied Host, User-Agent and Connection headers replace the defaults. Behavior change: empty POST/PUT/PATCH now send Content-Length: 0, and get_stream caps the response header block at max_header_bytes. Thanks to winding-lines for #40, #41, #42 and #46."
     }
   ]
 }
