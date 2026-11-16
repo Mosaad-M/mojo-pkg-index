@@ -200,6 +200,22 @@
         "tls": ">=1.7.0"
       },
       "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
+    },
+    {
+      "version": "1.8.1",
+      "published_at": "2026-11-16",
+      "tarball_url": "https://github.com/Mosaad-M/pg/archive/refs/tags/v1.8.1.tar.gz",
+      "sha256": "1319759e30478940adb6a370b0b1842a4b14fcf38c781eab97cf76e7f92388c3",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tcp",
+        "tls"
+      ],
+      "dep_constraints": {
+        "tcp": ">=2.0.1",
+        "tls": ">=1.11.0"
+      },
+      "changelog": "Requires tls >= 1.11.0 (ALPN result on TLS 1.2, SSL_CERT_FILE and distro CA bundle paths). No API or behavior change."
     }
   ]
 }
