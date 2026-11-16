@@ -237,7 +237,12 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.0.0.tar.gz",
           "sha256": "c0ced20e5a233d68f60460845e8dbae63926373273e21c58b5372b03c95c24ff",
           "mojo_requires": ">=0.26.2",
-          "deps": []
+          "deps": [
+            "tcp"
+          ],
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.0.1",
@@ -245,7 +250,12 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.1.tar.gz",
           "sha256": "06f77ed963568cf353f98e9624ada6c7c89712d831ef20cf49e5bc09b8f61985",
           "mojo_requires": ">=0.26.2",
-          "deps": []
+          "deps": [
+            "tcp"
+          ],
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.0.2",
@@ -253,7 +263,12 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/v1.0.2.tar.gz",
           "sha256": "bb06949c8799965f292b0d0ef4ea49750e1043db76cd92cedbdcdebf0601c09b",
           "mojo_requires": ">=0.26.2",
-          "deps": []
+          "deps": [
+            "tcp"
+          ],
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.1.0",
@@ -261,8 +276,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.1.0.tar.gz",
           "sha256": "a47062d5f18d3a70603d3bb6aeaad4772990c2d9e808a767a3962fb377d826b7",
           "mojo_requires": ">=0.26.2",
-          "deps": [],
-          "changelog": "TLS 1.3 PSK session tickets: tls13_psk_from_ticket, tls13_early_secret_from_psk, tls13_binder_key, tls13_psk_binder; NewSessionTicket parser; p256_ecdsa_sign with low-s normalization"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "TLS 1.3 PSK session tickets: tls13_psk_from_ticket, tls13_early_secret_from_psk, tls13_binder_key, tls13_psk_binder; NewSessionTicket parser; p256_ecdsa_sign with low-s normalization",
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.2.0",
@@ -270,8 +290,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.2.0.tar.gz",
           "sha256": "402f0f067c5b11908e0a5cf0a1c41966d8ee2241b60d1af42b81ea496d8569bf",
           "mojo_requires": ">=0.26.2",
-          "deps": [],
-          "changelog": "TLS 1.2 mTLS / ECDSA client auth: NewSessionTicket capture in session_tickets(), connect_with_client_cert(), CertificateRequest12 parser, CertificateVerify builder, _ecdsa_raw_to_der"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "TLS 1.2 mTLS / ECDSA client auth: NewSessionTicket capture in session_tickets(), connect_with_client_cert(), CertificateRequest12 parser, CertificateVerify builder, _ecdsa_raw_to_der",
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.3.0",
@@ -279,8 +304,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.3.0.tar.gz",
           "sha256": "56431b801bc12145f89f46a84e39af2b00c8c4b6dccc7415ec57b0625a3b3039",
           "mojo_requires": ">=0.26.2",
-          "deps": [],
-          "changelog": "ALPN extension support: alpn_protocols param in connect()/connect_with_client_cert(), negotiated_protocol() method; TLS 1.3 + 1.2 ALPN ClientHello builder and ServerHello parser (RFC 7301)"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "ALPN extension support: alpn_protocols param in connect()/connect_with_client_cert(), negotiated_protocol() method; TLS 1.3 + 1.2 ALPN ClientHello builder and ServerHello parser (RFC 7301)",
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.3.1",
@@ -288,8 +318,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.3.1.tar.gz",
           "sha256": "e52c5032162d4c827d125608bf1b72c8836bf0860fd6540c19049a12ea417e96",
           "mojo_requires": ">=0.26.2",
-          "deps": [],
-          "changelog": "macOS compatibility: load_system_ca_bundle uses /etc/ssl/cert.pem on macOS; fix open() flags in test helpers for macOS ARM64"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "macOS compatibility: load_system_ca_bundle uses /etc/ssl/cert.pem on macOS; fix open() flags in test helpers for macOS ARM64",
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.3.2",
@@ -297,8 +332,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.3.2.tar.gz",
           "sha256": "65e3f6f5f41fa08eb4c9a5dfeda05a589e4a517c9e1adbc31c1a709a5cf89be9",
           "mojo_requires": ">=0.26.2",
-          "deps": [],
-          "changelog": "Fix comptime if scope bug in load_system_ca_bundle (v1.3.1 regression)"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Fix comptime if scope bug in load_system_ca_bundle (v1.3.1 regression)",
+          "dep_constraints": {
+            "tcp": ">=1.0.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.0",
@@ -306,8 +346,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.0.tar.gz",
           "sha256": "c7ee9a67ca97df6b4f663a87e02aa772591b230f81fb39d1ba31df5726fee859",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Mojo 1.0.0 (stable) compatibility migration"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Mojo 1.0.0 (stable) compatibility migration",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.1",
@@ -315,8 +360,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.1.tar.gz",
           "sha256": "f7bdfb019707dffa34a44316eeae3fb1f0c3f9199d42ca5b4eafc791c5a34c28",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Fix load_system_ca_bundle passing a non-NUL-terminated path to open() (failed on Linux)"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Fix load_system_ca_bundle passing a non-NUL-terminated path to open() (failed on Linux)",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.2",
@@ -324,8 +374,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.2.tar.gz",
           "sha256": "ff36cd90175f9f9763313dc0dc43ff39f257c3ee3fc039bb1e36c177b1338075",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Accept certificate chains anchored at a cross-signed root (fixes HTTPS on Linux for e.g. Google Trust Services chains); exact byte comparison for keys"
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Accept certificate chains anchored at a cross-signed root (fixes HTTPS on Linux for e.g. Google Trust Services chains); exact byte comparison for keys",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.3",
@@ -333,8 +388,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.3.tar.gz",
           "sha256": "7a702e1998c4a44e7f111306d64f8ba1dd903780d3e26113453a7b1346cefb57",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "SECURITY (critical): certificate path validation now enforces CA constraints (basicConstraints, keyUsage, EKU, pathLen, name chaining, critical extensions); earlier versions let any trusted leaf certificate impersonate any host. Validity times fail closed."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "SECURITY (critical): certificate path validation now enforces CA constraints (basicConstraints, keyUsage, EKU, pathLen, name chaining, critical extensions); earlier versions let any trusted leaf certificate impersonate any host. Validity times fail closed.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.4",
@@ -342,8 +402,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.4.tar.gz",
           "sha256": "59589db20f78741e9684eada044128fcb1939111ae284e9e1db2c0d7c93f8d7e",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "SECURITY: recv_all() requires an authenticated close_notify (truncation; allow_truncation=True opts out); plaintext/undecryptable post-handshake alerts rejected; RSA PKCS#1 out-of-bounds read fixed; all-zero X25519 secret rejected; TLS 1.3 downgrade sentinel checked; TLS 1.3 padding stripped; no PKCS#1 in TLS 1.3 CertificateVerify; *.com wildcards rejected. Interop: RSA-PSS in TLS 1.2 ServerKeyExchange."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "SECURITY: recv_all() requires an authenticated close_notify (truncation; allow_truncation=True opts out); plaintext/undecryptable post-handshake alerts rejected; RSA PKCS#1 out-of-bounds read fixed; all-zero X25519 secret rejected; TLS 1.3 downgrade sentinel checked; TLS 1.3 padding stripped; no PKCS#1 in TLS 1.3 CertificateVerify; *.com wildcards rejected. Interop: RSA-PSS in TLS 1.2 ServerKeyExchange.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.5",
@@ -351,8 +416,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.5.tar.gz",
           "sha256": "10f2f472e5224845ba53771cb046765224b18cde2c604ab9d4530f3dd7e3864c",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "TLS 1.3 KeyUpdate (server key rotation no longer breaks connections; update requests answered). Socket I/O: resumable read timeouts reported as 'tls: read timed out', no SIGPIPE on writes to closed peers, EINTR retried, TlsSocket.set_timeout()."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "TLS 1.3 KeyUpdate (server key rotation no longer breaks connections; update requests answered). Socket I/O: resumable read timeouts reported as 'tls: read timed out', no SIGPIPE on writes to closed peers, EINTR retried, TlsSocket.set_timeout().",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.4.6",
@@ -360,8 +430,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.4.6.tar.gz",
           "sha256": "4b00407e0f8d310edc92f1d3189af0fc2779620c681e39c83d3e60cdb8f63c8f",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "SECURITY: constant-time AES (bitsliced), GHASH (table-free) and P-256 secret-key operations (key generation, ECDH, ECDSA signing); removes cache-timing and scalar-length timing leaks. AES-GCM ~8x and P-256 ~3x faster."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "SECURITY: constant-time AES (bitsliced), GHASH (table-free) and P-256 secret-key operations (key generation, ECDH, ECDSA signing); removes cache-timing and scalar-length timing leaks. AES-GCM ~8x and P-256 ~3x faster.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.5.0",
@@ -369,8 +444,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.5.0.tar.gz",
           "sha256": "dd60774534b48c5c056ce2d23465cd9e0d7995e33888412bc2eea79223229cbd",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "TLS 1.3 HelloRetryRequest (P-256/P-384); TLS 1.2 extended master secret and renegotiation_info; constant-time P-384 key exchange. Fixes: TLS 1.2 SHA-384 suites used the SHA-256 PRF; servers with P-384 ECDSA certificates could not connect."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "TLS 1.3 HelloRetryRequest (P-256/P-384); TLS 1.2 extended master secret and renegotiation_info; constant-time P-384 key exchange. Fixes: TLS 1.2 SHA-384 suites used the SHA-256 PRF; servers with P-384 ECDSA certificates could not connect.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.6.0",
@@ -378,8 +458,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.6.0.tar.gz",
           "sha256": "35d4ab19d9ecfb9ba78d4dbf2e19280e5ce8a7af212b7e6c3bfc48293758b237",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "SECURITY: fixes from a second review. A malformed certificate crashed the process; unbounded handshake buffering before authentication; strict TLS 1.2/1.3 state machines (also fixes servers that fragment handshake messages, e.g. facebook.com); nameConstraints and intermediate EKU enforced; RSA >= 2048; strict protocol/DER/signature parsing; TLS 1.2 mTLS over SHA-384 suites fixed."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "SECURITY: fixes from a second review. A malformed certificate crashed the process; unbounded handshake buffering before authentication; strict TLS 1.2/1.3 state machines (also fixes servers that fragment handshake messages, e.g. facebook.com); nameConstraints and intermediate EKU enforced; RSA >= 2048; strict protocol/DER/signature parsing; TLS 1.2 mTLS over SHA-384 suites fixed.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.6.1",
@@ -387,8 +472,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.6.1.tar.gz",
           "sha256": "680928daec20944d891dca7c2fbf0ab02dc2c20a7a10edd9525a1cb7c441b662",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "SHA-512 signatures (RSA PKCS#1/PSS, ecdsa-with-SHA512 and RSA-PSS SHA-512 certificates, TLS 1.3/1.2 rsa_pss_rsae_sha512 and TLS 1.2 rsa_pkcs1_sha512); AES-GCM keys prepared once per connection (64-byte records 4.9 -> 2.9 us); every peer-facing parser fuzzed in CI."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "SHA-512 signatures (RSA PKCS#1/PSS, ecdsa-with-SHA512 and RSA-PSS SHA-512 certificates, TLS 1.3/1.2 rsa_pss_rsae_sha512 and TLS 1.2 rsa_pkcs1_sha512); AES-GCM keys prepared once per connection (64-byte records 4.9 -> 2.9 us); every peer-facing parser fuzzed in CI.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0,<2.0.0"
+          }
         },
         {
           "version": "1.7.0",
@@ -396,8 +486,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.7.0.tar.gz",
           "sha256": "ed14f36d2d39a37d7625e1d4f01c5aac916d09b942a69daf98e67b908ca2048d",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Works alongside Mojo's std: declares no C function std declares (open/read/write, errno), so programs using tls with open(), listdir or get_errno compile again. Sockets use recv/send everywhere; CA bundles over 2 MB are no longer cut off. websocket <= 1.1.3 clashes with it: use websocket >= 1.2.0."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Works alongside Mojo's std: declares no C function std declares (open/read/write, errno), so programs using tls with open(), listdir or get_errno compile again. Sockets use recv/send everywhere; CA bundles over 2 MB are no longer cut off. websocket <= 1.1.3 clashes with it: use websocket >= 1.2.0.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.8.0",
@@ -405,8 +500,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.8.0.tar.gz",
           "sha256": "d81d324d35f580a4907f042925594e0f8220f0c24436c222d587bb3c6ff1d885",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Hardware AES-GCM (ARMv8 crypto / x86 AES-NI + PCLMULQDQ, constant time; software path kept for other targets) and a rewritten receive path: recv loop 34 -> ~1,000 MB/s, recv_all 1 -> 719 MB/s, small reads 22 -> 0.2 us; recv_exact no longer reserves peer-supplied lengths up front. No API change."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Hardware AES-GCM (ARMv8 crypto / x86 AES-NI + PCLMULQDQ, constant time; software path kept for other targets) and a rewritten receive path: recv loop 34 -> ~1,000 MB/s, recv_all 1 -> 719 MB/s, small reads 22 -> 0.2 us; recv_exact no longer reserves peer-supplied lengths up front. No API change.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.8.1",
@@ -414,8 +514,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.8.1.tar.gz",
           "sha256": "65bff5ea36548e82b5e1c41a73c5a9d9c975495eca27689613a78b5a4b554be2",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Parity with OpenSSL: fused AES-CTR + GHASH (AES-256-GCM 1.8 -> 4.8 GB/s), records decrypted in place, sends without byte copies: recv loop ~1,000 -> ~1,230 MB/s (Python/OpenSSL 1,160-1,260 on the same server), recv_all 719 -> 1,140, send 446 -> 1,790 MB/s. A record that fails authentication leaves no plaintext behind. No API change."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Parity with OpenSSL: fused AES-CTR + GHASH (AES-256-GCM 1.8 -> 4.8 GB/s), records decrypted in place, sends without byte copies: recv loop ~1,000 -> ~1,230 MB/s (Python/OpenSSL 1,160-1,260 on the same server), recv_all 719 -> 1,140, send 446 -> 1,790 MB/s. A record that fails authentication leaves no plaintext behind. No API change.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.8.2",
@@ -423,8 +528,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.8.2.tar.gz",
           "sha256": "d1f47427251080e4c025ae1e8abb7f59c98edabdf96d47fba566d5db4f4db31a",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Fast ChaCha20-Poly1305: 16-block SIMD ChaCha20 and radix-2^44 Poly1305 (portable, constant time): AEAD 37 -> ~930 MB/s, recv over TLS_CHACHA20_POLY1305_SHA256 ~37 -> ~740 MB/s (Python/OpenSSL 695-732 on the same server). TLS 1.2 records are built whole (one copy less per send). No API change."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Fast ChaCha20-Poly1305: 16-block SIMD ChaCha20 and radix-2^44 Poly1305 (portable, constant time): AEAD 37 -> ~930 MB/s, recv over TLS_CHACHA20_POLY1305_SHA256 ~37 -> ~740 MB/s (Python/OpenSSL 695-732 on the same server). TLS 1.2 records are built whole (one copy less per send). No API change.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.9.0",
@@ -432,8 +542,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.9.0.tar.gz",
           "sha256": "f06b9ee5f95c38565659a482d59aecf2d8495363c223f8380034b0102ba227d5",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Fast handshakes: 64-bit Montgomery arithmetic for ECDSA/ECDH (constant time kept) and RSA. Verify: RSA-2048 36.5 -> 0.08 ms, P-256 18.5 -> 0.24 ms; real-site handshakes 92-457 -> 23-40 ms (same as Python/OpenSSL). No API change."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Fast handshakes: 64-bit Montgomery arithmetic for ECDSA/ECDH (constant time kept) and RSA. Verify: RSA-2048 36.5 -> 0.08 ms, P-256 18.5 -> 0.24 ms; real-site handshakes 92-457 -> 23-40 ms (same as Python/OpenSSL). No API change.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.9.1",
@@ -441,8 +556,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.9.1.tar.gz",
           "sha256": "04f5296f16e97cf68832c989d5049364c7f4a2d25c2273c25df7e1c82e6d5d84",
           "mojo_requires": ">=1.0.0",
-          "deps": [],
-          "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): InlineArray renamed to Array, which 1.0 also has. No behavior change. CI now also tests on the newest Mojo release."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Builds on Mojo 1.1.0 (and still 1.0.0): InlineArray renamed to Array, which 1.0 also has. No behavior change. CI now also tests on the newest Mojo release.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.10.0",
@@ -450,8 +570,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.10.0.tar.gz",
           "sha256": "ed09dcca6194e8ff7b26d438e003992a72f3ec13051600e41a60d5ee96520551",
           "mojo_requires": ">=1.2.0",
-          "deps": [],
-          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         },
         {
           "version": "1.11.0",
@@ -459,8 +584,13 @@
           "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.11.0.tar.gz",
           "sha256": "7dcf80c682bd95fcb85193949aa05428253860234c2d53ff87d0bfbcb61ca8cd",
           "mojo_requires": ">=1.2.0",
-          "deps": [],
-          "changelog": "TlsSocket.negotiated_protocol() now reports the ALPN protocol on TLS 1.2 connections (it returned \"\"); a ServerHello that selects a protocol that was not offered, an unsolicited ALPN or several protocols is rejected. load_system_ca_bundle() honours $SSL_CERT_FILE (a missing file raises) and finds the CA bundle on Fedora/RHEL, openSUSE and Alpine; new load_ca_bundle(path). Thanks to winding-lines for #21/#22."
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "TlsSocket.negotiated_protocol() now reports the ALPN protocol on TLS 1.2 connections (it returned \"\"); a ServerHello that selects a protocol that was not offered, an unsolicited ALPN or several protocols is rejected. load_system_ca_bundle() honours $SSL_CERT_FILE (a missing file raises) and finds the CA bundle on Fedora/RHEL, openSUSE and Alpine; new load_ca_bundle(path). Thanks to winding-lines for #21/#22.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         }
       ]
     },
@@ -484,8 +614,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": "<2.0.0",
-            "tcp": "<2.0.0"
+            "tls": ">=1.0.0",
+            "tcp": ">=1.0.0,<2.0.0",
+            "url": ">=1.0.0",
+            "json": ">=1.0.0,<2.0.0"
           }
         },
         {
@@ -501,8 +633,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": "<2.0.0",
-            "tcp": "<2.0.0"
+            "tls": ">=1.0.0",
+            "tcp": ">=1.0.0,<2.0.0",
+            "url": ">=1.0.0",
+            "json": ">=1.0.0,<2.0.0"
           }
         },
         {
@@ -518,8 +652,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": "<2.0.0",
-            "tcp": "<2.0.0"
+            "tls": ">=1.4.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0",
+            "json": ">=1.1.0,<2.0.0"
           },
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         },
@@ -536,8 +672,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": ">=3.0.1",
-            "tcp": "<2.0.0"
+            "tls": ">=1.4.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0",
+            "json": ">=3.0.1"
           },
           "changelog": "Requires json >= 3.0.1; HttpResponse.json() still returns a JsonValue; new HttpResponse.json_doc() returns a read-only JsonDoc."
         },
@@ -554,9 +692,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": ">=3.0.1",
-            "tcp": "<2.0.0",
-            "tls": ">=1.4.3"
+            "tls": ">=1.4.3",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0",
+            "json": ">=3.0.1"
           },
           "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
         },
@@ -573,9 +712,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": ">=3.0.1",
-            "tcp": "<2.0.0",
-            "tls": ">=1.4.4"
+            "tls": ">=1.4.4",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0",
+            "json": ">=3.0.1"
           },
           "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
         },
@@ -592,9 +732,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": ">=3.0.1",
-            "tcp": "<2.0.0",
-            "tls": ">=1.7.0"
+            "tls": ">=1.7.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0",
+            "json": ">=3.0.1"
           },
           "changelog": "No getenv/clock_gettime declarations of its own, so programs using HttpClient with std.os.getenv, open() or the std time functions compile; random multipart boundaries; requires tls 1.7.0."
         },
@@ -611,9 +752,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": ">=3.0.1",
+            "tls": ">=1.7.0",
             "tcp": ">=2.0.0",
-            "tls": ">=1.7.0"
+            "url": ">=1.1.0",
+            "json": ">=3.0.1"
           },
           "changelog": "tcp 2.0.0: TlsSocket(sock.detach()); plain-HTTP sends complete or raise; no SIGPIPE."
         },
@@ -630,9 +772,10 @@
             "json"
           ],
           "dep_constraints": {
-            "json": ">=3.0.1",
+            "tls": ">=1.7.0",
             "tcp": ">=2.0.0",
-            "tls": ">=1.7.0"
+            "url": ">=1.1.0",
+            "json": ">=3.0.1"
           },
           "changelog": "No linker flags: zlib/libzstd/libbrotlidec are opened at runtime and Accept-Encoding lists only what can be decoded (builds with $(cat .mojo_flags) alone). Fixed HTTP/2 PADDED frames (google.com gzip failed)."
         },
@@ -649,6 +792,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change. Needs json >= 3.1.0."
@@ -666,6 +812,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "Adds total_timeout_secs deadline, retries (max_retries), HTTP/2 multiplexing (get_many), and configurable max_response_bytes/max_header_bytes/max_batch_bytes. Additive API. Behavior changes: POST/PATCH no longer replayed on a stale pooled connection unless retry_non_idempotent; h1 headers >1 MB and h2 bodies >100 MB rejected; ENABLE_PUSH=0 sent."
@@ -683,6 +832,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "Bug fixes, no API change. Content-Length and Transfer-Encoding are matched as header names only (a header such as X-Amz-Meta-Content-Length, or a value containing the text, no longer truncates the body and desyncs the keep-alive connection). Chunked bodies are detected when Transfer-Encoding is the last header (S3 listings: ~6.5 s to ~0.7 s)."
@@ -700,6 +852,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "HTTP/1.1 response framing is decided once, from the parsed headers. Behavior change: ambiguous framing now raises ParseError (differing or non-numeric Content-Length, whitespace before the colon or a line continuation in Content-Length/Transfer-Encoding, unsupported transfer codings such as 'gzip, chunked', chunked not last). Transfer-Encoding wins over Content-Length, and such connections are not reused. Chunked trailers split across reads no longer time out. max_response_bytes above 100 MB now works for HTTP/1.1. No API changes; pin to 1.7.1 if you rely on lenient parsing."
@@ -717,6 +872,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "Bug fixes, no API change. Security: a chunk size such as 7FFFFFFFFFFFFFFF no longer aborts the process (ChunkedBodyError), and a malformed HPACK string from an HTTP/2 server raises instead of reading past the block. Performance: chunked bodies are decoded in linear time (4x16 MiB: 6.4 s to 0.2 s), large bodies are copied faster (#47) and no longer held twice in memory (1.8.0 regression). Brotli bodies that expand more than 8x now decode (#45)."
@@ -734,6 +892,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "Additive. HttpClient gains trust_env (False ignores HTTP(S)_PROXY/NO_PROXY), decompress (False returns bodies as sent), default_content_type (\"\" sends none) and a connections_opened counter. Interim 1xx responses are skipped and 204/304 no longer wait for a body on keep-alive connections. Caller-supplied Host, User-Agent and Connection headers replace the defaults. Behavior change: empty POST/PUT/PATCH now send Content-Length: 0, and get_stream caps the response header block at max_header_bytes. Thanks to winding-lines for #40, #41, #42 and #46."
@@ -751,6 +912,9 @@
             "json"
           ],
           "dep_constraints": {
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "Security hardening; rejects traffic that worked before (pin 1.9.0 if you rely on it). Cookies: Domain must cover the request host, control characters rejected, jar capped (3000 cookies, 4096 bytes each). Redirects drop Authorization, Cookie and Proxy-Authorization when the scheme, host or port changes. A chunked body cut before its terminal chunk raises ChunkedBodyError, and get_stream raises on a body shorter than Content-Length. Decompressed output is capped by max_response_bytes. NUL/control characters are rejected in header names, values and paths. HPACK table size updates above the advertised limit are errors. allow_private_ips still does not apply to the target of a proxied request."
@@ -769,6 +933,8 @@
           ],
           "dep_constraints": {
             "tls": ">=1.11.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "A TLS connection whose server answers no ALPN protocol now uses HTTP/1.1 on that same connection: the HTTP/2 preface probe and the second handshake are gone (a GET to a TLS 1.2 server used to open 2 connections). Requires tls >= 1.11.0, which reports the ALPN result on TLS 1.2, so a TLS 1.2 server that selects h2 still gets h2. Behavior change: servers that speak h2 without ALPN are no longer reached (RFC 9113 3.2). Thanks to winding-lines for #48."
@@ -787,6 +953,8 @@
           ],
           "dep_constraints": {
             "tls": ">=1.11.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0",
             "json": ">=3.1.0"
           },
           "changelog": "A chunked response body over 100 MB failed whatever max_response_bytes was set to; the chunk decoder now uses the client's limit. A single chunk over 256 MB is still rejected. Thanks to winding-lines for the report (#28)."
@@ -812,8 +980,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": "<1.7.0"
+            "tls": ">=1.0.0,<1.7.0",
+            "tcp": ">=1.0.0,<2.0.0",
+            "url": ">=1.0.0"
           }
         },
         {
@@ -828,8 +997,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": "<1.7.0"
+            "tls": ">=1.0.0,<1.7.0",
+            "tcp": ">=1.0.0,<2.0.0",
+            "url": ">=1.0.0"
           }
         },
         {
@@ -844,8 +1014,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": "<1.7.0"
+            "tls": ">=1.0.0,<1.7.0",
+            "tcp": ">=1.0.0,<2.0.0",
+            "url": ">=1.0.0"
           }
         },
         {
@@ -860,8 +1031,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": "<1.7.0"
+            "tls": ">=1.4.0,<1.7.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0"
           },
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         },
@@ -877,8 +1049,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": "<1.7.0"
+            "tls": ">=1.4.0,<1.7.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0"
           },
           "changelog": "_recv_exact() now distinguishes a real socket error, a receive timeout, and a clean peer close instead of reporting all three as the same generic message"
         },
@@ -894,8 +1067,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": ">=1.4.3,<1.7.0"
+            "tls": ">=1.4.3,<1.7.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0"
           },
           "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
         },
@@ -911,8 +1085,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": ">=1.4.4,<1.7.0"
+            "tls": ">=1.4.4,<1.7.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0"
           },
           "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
         },
@@ -928,8 +1103,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
-            "tls": ">=1.7.0"
+            "tls": ">=1.7.0",
+            "tcp": ">=1.1.0,<2.0.0",
+            "url": ">=1.1.0"
           },
           "changelog": "errno via std.ffi.get_errno, so programs using WebSocket with open(), listdir or get_errno compile; requires tls 1.7.0."
         },
@@ -945,8 +1121,9 @@
             "url"
           ],
           "dep_constraints": {
+            "tls": ">=1.7.0",
             "tcp": ">=2.0.0",
-            "tls": ">=1.7.0"
+            "url": ">=1.1.0"
           },
           "changelog": "tcp 2.0.0: wss:// hands the socket over with detach(); ws:// sends complete or raise; no SIGPIPE."
         },
@@ -962,8 +1139,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": ">=2.0.0",
-            "tls": ">=1.7.0"
+            "tls": ">=1.10.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0"
           },
           "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         },
@@ -979,8 +1157,9 @@
             "url"
           ],
           "dep_constraints": {
-            "tcp": ">=2.0.0",
-            "tls": ">=1.11.0"
+            "tls": ">=1.11.0",
+            "tcp": ">=2.1.0",
+            "url": ">=1.2.0"
           },
           "changelog": "Requires tls >= 1.11.0 (ALPN result on TLS 1.2, SSL_CERT_FILE and distro CA bundle paths). No API or behavior change."
         }
@@ -1019,7 +1198,7 @@
             "tcp"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0"
+            "tcp": ">=1.0.3,<2.0.0"
           }
         },
         {
@@ -1032,7 +1211,7 @@
             "tcp"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0"
+            "tcp": ">=1.0.3,<2.0.0"
           }
         },
         {
@@ -1046,7 +1225,8 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0"
+            "tcp": ">=1.0.3,<2.0.0",
+            "tls": ">=1.0.2"
           }
         },
         {
@@ -1060,7 +1240,8 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0"
+            "tcp": ">=1.0.3,<2.0.0",
+            "tls": ">=1.0.2"
           }
         },
         {
@@ -1074,7 +1255,8 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0"
+            "tcp": ">=1.0.3,<2.0.0",
+            "tls": ">=1.0.2"
           },
           "changelog": "exec_pipeline(): send N queries in one round-trip; PgResult.error field; Copyable PgResult"
         },
@@ -1089,7 +1271,8 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0"
+            "tcp": ">=1.1.0,<2.0.0",
+            "tls": ">=1.4.0"
           },
           "changelog": "Mojo 1.0.0 (stable) compatibility migration"
         },
@@ -1104,7 +1287,7 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
+            "tcp": ">=1.1.0,<2.0.0",
             "tls": ">=1.4.3"
           },
           "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
@@ -1120,7 +1303,7 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
+            "tcp": ">=1.1.0,<2.0.0",
             "tls": ">=1.4.4"
           },
           "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
@@ -1136,7 +1319,7 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": "<2.0.0",
+            "tcp": ">=1.1.0,<2.0.0",
             "tls": ">=1.7.0"
           },
           "changelog": "SECURITY: the SCRAM client nonce now comes from the OS CSPRNG (was clock + PID). No getenv/clock_gettime declarations of its own, so programs using PgConnection with std APIs compile; requires tls 1.7.0."
@@ -1184,8 +1367,8 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": ">=2.0.1",
-            "tls": ">=1.7.0"
+            "tcp": ">=2.1.0",
+            "tls": ">=1.10.0"
           },
           "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
         },
@@ -1200,7 +1383,7 @@
             "tls"
           ],
           "dep_constraints": {
-            "tcp": ">=2.0.1",
+            "tcp": ">=2.1.0",
             "tls": ">=1.11.0"
           },
           "changelog": "Requires tls >= 1.11.0 (ALPN result on TLS 1.2, SSL_CERT_FILE and distro CA bundle paths). No API or behavior change."

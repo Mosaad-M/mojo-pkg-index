@@ -18,8 +18,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": "<2.0.0",
-        "tcp": "<2.0.0"
+        "tls": ">=1.0.0",
+        "tcp": ">=1.0.0,<2.0.0",
+        "url": ">=1.0.0",
+        "json": ">=1.0.0,<2.0.0"
       }
     },
     {
@@ -35,8 +37,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": "<2.0.0",
-        "tcp": "<2.0.0"
+        "tls": ">=1.0.0",
+        "tcp": ">=1.0.0,<2.0.0",
+        "url": ">=1.0.0",
+        "json": ">=1.0.0,<2.0.0"
       }
     },
     {
@@ -52,8 +56,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": "<2.0.0",
-        "tcp": "<2.0.0"
+        "tls": ">=1.4.0",
+        "tcp": ">=1.1.0,<2.0.0",
+        "url": ">=1.1.0",
+        "json": ">=1.1.0,<2.0.0"
       },
       "changelog": "Mojo 1.0.0 (stable) compatibility migration"
     },
@@ -70,8 +76,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": ">=3.0.1",
-        "tcp": "<2.0.0"
+        "tls": ">=1.4.0",
+        "tcp": ">=1.1.0,<2.0.0",
+        "url": ">=1.1.0",
+        "json": ">=3.0.1"
       },
       "changelog": "Requires json >= 3.0.1; HttpResponse.json() still returns a JsonValue; new HttpResponse.json_doc() returns a read-only JsonDoc."
     },
@@ -88,9 +96,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": ">=3.0.1",
-        "tcp": "<2.0.0",
-        "tls": ">=1.4.3"
+        "tls": ">=1.4.3",
+        "tcp": ">=1.1.0,<2.0.0",
+        "url": ">=1.1.0",
+        "json": ">=3.0.1"
       },
       "changelog": "Security: requires tls >= 1.4.3 (earlier tls accepted certificates issued by non-CA certificates, letting any trusted certificate impersonate any server)."
     },
@@ -107,9 +116,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": ">=3.0.1",
-        "tcp": "<2.0.0",
-        "tls": ">=1.4.4"
+        "tls": ">=1.4.4",
+        "tcp": ">=1.1.0,<2.0.0",
+        "url": ">=1.1.0",
+        "json": ">=3.0.1"
       },
       "changelog": "Requires tls >= 1.4.4 (security hardening: truncation protection, RSA PKCS#1 out-of-bounds read fix, X25519 low-order rejection, TLS 1.3 downgrade sentinel)."
     },
@@ -126,9 +136,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": ">=3.0.1",
-        "tcp": "<2.0.0",
-        "tls": ">=1.7.0"
+        "tls": ">=1.7.0",
+        "tcp": ">=1.1.0,<2.0.0",
+        "url": ">=1.1.0",
+        "json": ">=3.0.1"
       },
       "changelog": "No getenv/clock_gettime declarations of its own, so programs using HttpClient with std.os.getenv, open() or the std time functions compile; random multipart boundaries; requires tls 1.7.0."
     },
@@ -145,9 +156,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": ">=3.0.1",
+        "tls": ">=1.7.0",
         "tcp": ">=2.0.0",
-        "tls": ">=1.7.0"
+        "url": ">=1.1.0",
+        "json": ">=3.0.1"
       },
       "changelog": "tcp 2.0.0: TlsSocket(sock.detach()); plain-HTTP sends complete or raise; no SIGPIPE."
     },
@@ -164,9 +176,10 @@
         "json"
       ],
       "dep_constraints": {
-        "json": ">=3.0.1",
+        "tls": ">=1.7.0",
         "tcp": ">=2.0.0",
-        "tls": ">=1.7.0"
+        "url": ">=1.1.0",
+        "json": ">=3.0.1"
       },
       "changelog": "No linker flags: zlib/libzstd/libbrotlidec are opened at runtime and Accept-Encoding lists only what can be decoded (builds with $(cat .mojo_flags) alone). Fixed HTTP/2 PADDED frames (google.com gzip failed)."
     },
@@ -183,6 +196,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change. Needs json >= 3.1.0."
@@ -200,6 +216,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "Adds total_timeout_secs deadline, retries (max_retries), HTTP/2 multiplexing (get_many), and configurable max_response_bytes/max_header_bytes/max_batch_bytes. Additive API. Behavior changes: POST/PATCH no longer replayed on a stale pooled connection unless retry_non_idempotent; h1 headers >1 MB and h2 bodies >100 MB rejected; ENABLE_PUSH=0 sent."
@@ -217,6 +236,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "Bug fixes, no API change. Content-Length and Transfer-Encoding are matched as header names only (a header such as X-Amz-Meta-Content-Length, or a value containing the text, no longer truncates the body and desyncs the keep-alive connection). Chunked bodies are detected when Transfer-Encoding is the last header (S3 listings: ~6.5 s to ~0.7 s)."
@@ -234,6 +256,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "HTTP/1.1 response framing is decided once, from the parsed headers. Behavior change: ambiguous framing now raises ParseError (differing or non-numeric Content-Length, whitespace before the colon or a line continuation in Content-Length/Transfer-Encoding, unsupported transfer codings such as 'gzip, chunked', chunked not last). Transfer-Encoding wins over Content-Length, and such connections are not reused. Chunked trailers split across reads no longer time out. max_response_bytes above 100 MB now works for HTTP/1.1. No API changes; pin to 1.7.1 if you rely on lenient parsing."
@@ -251,6 +276,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "Bug fixes, no API change. Security: a chunk size such as 7FFFFFFFFFFFFFFF no longer aborts the process (ChunkedBodyError), and a malformed HPACK string from an HTTP/2 server raises instead of reading past the block. Performance: chunked bodies are decoded in linear time (4x16 MiB: 6.4 s to 0.2 s), large bodies are copied faster (#47) and no longer held twice in memory (1.8.0 regression). Brotli bodies that expand more than 8x now decode (#45)."
@@ -268,6 +296,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "Additive. HttpClient gains trust_env (False ignores HTTP(S)_PROXY/NO_PROXY), decompress (False returns bodies as sent), default_content_type (\"\" sends none) and a connections_opened counter. Interim 1xx responses are skipped and 204/304 no longer wait for a body on keep-alive connections. Caller-supplied Host, User-Agent and Connection headers replace the defaults. Behavior change: empty POST/PUT/PATCH now send Content-Length: 0, and get_stream caps the response header block at max_header_bytes. Thanks to winding-lines for #40, #41, #42 and #46."
@@ -285,6 +316,9 @@
         "json"
       ],
       "dep_constraints": {
+        "tls": ">=1.10.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "Security hardening; rejects traffic that worked before (pin 1.9.0 if you rely on it). Cookies: Domain must cover the request host, control characters rejected, jar capped (3000 cookies, 4096 bytes each). Redirects drop Authorization, Cookie and Proxy-Authorization when the scheme, host or port changes. A chunked body cut before its terminal chunk raises ChunkedBodyError, and get_stream raises on a body shorter than Content-Length. Decompressed output is capped by max_response_bytes. NUL/control characters are rejected in header names, values and paths. HPACK table size updates above the advertised limit are errors. allow_private_ips still does not apply to the target of a proxied request."
@@ -303,6 +337,8 @@
       ],
       "dep_constraints": {
         "tls": ">=1.11.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "A TLS connection whose server answers no ALPN protocol now uses HTTP/1.1 on that same connection: the HTTP/2 preface probe and the second handshake are gone (a GET to a TLS 1.2 server used to open 2 connections). Requires tls >= 1.11.0, which reports the ALPN result on TLS 1.2, so a TLS 1.2 server that selects h2 still gets h2. Behavior change: servers that speak h2 without ALPN are no longer reached (RFC 9113 3.2). Thanks to winding-lines for #48."
@@ -321,6 +357,8 @@
       ],
       "dep_constraints": {
         "tls": ">=1.11.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
         "json": ">=3.1.0"
       },
       "changelog": "A chunked response body over 100 MB failed whatever max_response_bytes was set to; the chunk decoder now uses the client's limit. A single chunk over 256 MB is still rejected. Thanks to winding-lines for the report (#28)."
