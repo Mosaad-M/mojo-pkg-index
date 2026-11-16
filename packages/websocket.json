@@ -171,6 +171,23 @@
         "tls": ">=1.7.0"
       },
       "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
+    },
+    {
+      "version": "1.4.1",
+      "published_at": "2026-11-16",
+      "tarball_url": "https://github.com/Mosaad-M/websocket/archive/refs/tags/v1.4.1.tar.gz",
+      "sha256": "7db3fc5eedad074411963087e78de00949c8dd2ce5c556f70d182648c0366ce8",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url"
+      ],
+      "dep_constraints": {
+        "tcp": ">=2.0.0",
+        "tls": ">=1.11.0"
+      },
+      "changelog": "Requires tls >= 1.11.0 (ALPN result on TLS 1.2, SSL_CERT_FILE and distro CA bundle paths). No API or behavior change."
     }
   ]
 }
