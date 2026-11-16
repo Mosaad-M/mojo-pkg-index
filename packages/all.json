@@ -772,6 +772,24 @@
             "json": ">=3.1.0"
           },
           "changelog": "A TLS connection whose server answers no ALPN protocol now uses HTTP/1.1 on that same connection: the HTTP/2 preface probe and the second handshake are gone (a GET to a TLS 1.2 server used to open 2 connections). Requires tls >= 1.11.0, which reports the ALPN result on TLS 1.2, so a TLS 1.2 server that selects h2 still gets h2. Behavior change: servers that speak h2 without ALPN are no longer reached (RFC 9113 3.2). Thanks to winding-lines for #48."
+        },
+        {
+          "version": "1.11.1",
+          "published_at": "2026-11-16",
+          "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.11.1.tar.gz",
+          "sha256": "d75447a6252a56e7ecb18935a0fccb709462b6ec7b856c2801e4985726650101",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tls",
+            "tcp",
+            "url",
+            "json"
+          ],
+          "dep_constraints": {
+            "tls": ">=1.11.0",
+            "json": ">=3.1.0"
+          },
+          "changelog": "A chunked response body over 100 MB failed whatever max_response_bytes was set to; the chunk decoder now uses the client's limit. A single chunk over 256 MB is still rejected. Thanks to winding-lines for the report (#28)."
         }
       ]
     },
