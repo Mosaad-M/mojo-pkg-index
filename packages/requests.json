@@ -362,6 +362,26 @@
         "json": ">=3.1.0"
       },
       "changelog": "A chunked response body over 100 MB failed whatever max_response_bytes was set to; the chunk decoder now uses the client's limit. A single chunk over 256 MB is still rejected. Thanks to winding-lines for the report (#28)."
+    },
+    {
+      "version": "1.12.0",
+      "published_at": "2026-11-17",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.12.0.tar.gz",
+      "sha256": "c4ab4bb9a2b705f1c97fb1b044643e097457f803524271cad8be1fdaafd24efc",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "tls": ">=1.11.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
+        "json": ">=3.1.0"
+      },
+      "changelog": "Binary request bodies: post/put/patch/delete take List[UInt8] or Span[UInt8]; a public request(method, url, [body], [headers]) for any method; HttpResponse.content() (zero-copy view) and to_bytes() (owned copy). Additive; existing signatures unchanged. Thanks to winding-lines (#37)."
     }
   ]
 }
