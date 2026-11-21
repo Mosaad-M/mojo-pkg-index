@@ -382,6 +382,26 @@
         "json": ">=3.1.0"
       },
       "changelog": "Binary request bodies: post/put/patch/delete take List[UInt8] or Span[UInt8]; a public request(method, url, [body], [headers]) for any method; HttpResponse.content() (zero-copy view) and to_bytes() (owned copy). Additive; existing signatures unchanged. Thanks to winding-lines (#37)."
+    },
+    {
+      "version": "1.13.0",
+      "published_at": "2026-11-21",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.13.0.tar.gz",
+      "sha256": "4a8665ea79263e7e004529a3a3c6408710b68255ee4d6f89859610deef4552d6",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "tls": ">=1.11.0",
+        "tcp": ">=2.1.0",
+        "url": ">=1.2.0",
+        "json": ">=3.1.0"
+      },
+      "changelog": "request_many(List[Request]) sends several requests at once, each with its own method, headers and body (a Range read per request). GET, HEAD and OPTIONS to one HTTP/2 host share a connection and run concurrently; everything else goes one by one. Session.request_many merges session headers. Additive; get_many is now a wrapper. Refs #35."
     }
   ]
 }
