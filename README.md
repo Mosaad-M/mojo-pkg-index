@@ -8,7 +8,7 @@ The official package index for [mojo-pkg](https://github.com/Mosaad-M/mojo-pkg) 
 |---------|-------------|---------|
 | [json](https://github.com/Mosaad-M/json) | Strict RFC 8259 JSON parser and serializer | 3.1.0 |
 | [url](https://github.com/Mosaad-M/url) | Pure Mojo URL parser | 1.2.0 |
-| [tcp](https://github.com/Mosaad-M/tcp) | Pure Mojo TCP socket layer | 2.1.0 |
+| [tcp](https://github.com/Mosaad-M/tcp) | Pure Mojo TCP socket layer | 2.2.0 |
 | [tls](https://github.com/Mosaad-M/tls) | Pure Mojo TLS 1.3 + 1.2 client | 1.11.0 |
 | [requests](https://github.com/Mosaad-M/requests) | Pure Mojo HTTP/HTTPS client | 1.13.0 |
 | [websocket](https://github.com/Mosaad-M/websocket) | Pure Mojo WebSocket client (RFC 6455) | 1.4.1 |
