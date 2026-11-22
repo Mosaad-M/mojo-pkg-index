@@ -600,6 +600,20 @@
           "dep_constraints": {
             "tcp": ">=1.1.0"
           }
+        },
+        {
+          "version": "1.12.0",
+          "published_at": "2026-11-22",
+          "tarball_url": "https://github.com/Mosaad-M/tls/archive/refs/tags/v1.12.0.tar.gz",
+          "sha256": "5c60626ec7f58ae05260098efa080c59a339775232e6a8ea480114d9f177ad9d",
+          "mojo_requires": ">=1.2.0",
+          "deps": [
+            "tcp"
+          ],
+          "changelog": "TlsSocket.set_timeout_ms(ms): send/receive timeouts in milliseconds (0 clears, negative raises, huge values cap instead of wrapping). set_timeout(seconds) uses the same code. Additive; no dependency change.",
+          "dep_constraints": {
+            "tcp": ">=1.1.0"
+          }
         }
       ]
     },
