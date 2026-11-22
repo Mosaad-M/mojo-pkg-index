@@ -402,6 +402,26 @@
         "json": ">=3.1.0"
       },
       "changelog": "request_many(List[Request]) sends several requests at once, each with its own method, headers and body (a Range read per request). GET, HEAD and OPTIONS to one HTTP/2 host share a connection and run concurrently; everything else goes one by one. Session.request_many merges session headers. Additive; get_many is now a wrapper. Refs #35."
+    },
+    {
+      "version": "1.14.0",
+      "published_at": "2026-11-22",
+      "tarball_url": "https://github.com/Mosaad-M/requests/archive/refs/tags/v1.14.0.tar.gz",
+      "sha256": "d2d34e1440e04f4494991e558cad1de8fb50f5b9369135e9ef5216449cdf7ade",
+      "mojo_requires": ">=1.2.0",
+      "deps": [
+        "tls",
+        "tcp",
+        "url",
+        "json"
+      ],
+      "dep_constraints": {
+        "tls": ">=1.12.0",
+        "tcp": ">=2.2.0",
+        "url": ">=1.2.0",
+        "json": ">=3.1.0"
+      },
+      "changelog": "Millisecond timeouts: HttpClient(timeout_ms=) and total_timeout_ms (each wins over its seconds counterpart; Session takes timeout_ms). Reads are capped to the time left in ms, so the deadline fires at the requested instant instead of up to a second late. Uses the public tcp 2.2.0 and tls 1.12.0 setters. Additive. Thanks to winding-lines (#38)."
     }
   ]
 }
