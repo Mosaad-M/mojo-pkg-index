@@ -221,6 +221,15 @@
           "mojo_requires": ">=1.2.0",
           "deps": [],
           "changelog": "Requires Mojo >= 1.2.0 (builds on 1.2, deprecation warnings cleared). No API or behavior change."
+        },
+        {
+          "version": "2.2.0",
+          "published_at": "2026-11-22",
+          "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v2.2.0.tar.gz",
+          "sha256": "a0b4c6254b1b305bedf572abff184fc5bda8e0dee25681f5f7e4c95719d1adac",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Millisecond timeouts (connect(timeout_ms=), set_timeout_ms, set_socket_timeout_ms), poll_fds with POLL* constants, set_nonblocking. SSRF filter now also blocks 5f00::/16, 3fff::/20, 100:0:0:1::/64 and judges IPv4-translated ::ffff:0:a.b.c.d by its IPv4. New fuzzers and security tests. Additive; existing signatures unchanged."
         }
       ]
     },
