@@ -230,6 +230,15 @@
           "mojo_requires": ">=1.2.0",
           "deps": [],
           "changelog": "Millisecond timeouts (connect(timeout_ms=), set_timeout_ms, set_socket_timeout_ms), poll_fds with POLL* constants, set_nonblocking. SSRF filter now also blocks 5f00::/16, 3fff::/20, 100:0:0:1::/64 and judges IPv4-translated ::ffff:0:a.b.c.d by its IPv4. New fuzzers and security tests. Additive; existing signatures unchanged."
+        },
+        {
+          "version": "2.2.1",
+          "published_at": "2026-11-27",
+          "tarball_url": "https://github.com/Mosaad-M/tcp/archive/refs/tags/v2.2.1.tar.gz",
+          "sha256": "2103d472957eb610ba48b28e4cafd576de1f14a9b1f8f04b05d8b8ffc8aa09ec",
+          "mojo_requires": ">=1.2.0",
+          "deps": [],
+          "changelog": "Faster recv_all for large bodies: it reserves room for its whole size limit (at most 128 MiB) once a body reaches 4 MiB instead of doubling its buffer. A 256 MiB body takes 1.6x to 2.0x less time and about half the memory. No API change; README rewritten."
         }
       ]
     },
